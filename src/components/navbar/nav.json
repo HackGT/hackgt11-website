@@ -1,0 +1,39 @@
+{
+  "components": [
+    {
+      "name": "HOME",
+      "id": "#home",
+      "color": "#E2CFC466"
+    },
+    {
+      "name": "ABOUT",
+      "id": "#about",
+      "color": "#F7D9C466"
+    },
+    {
+      "name": "TRACKS",
+      "id": "#tracks_and_challenges",
+      "color": "#FBE3A4"
+    },
+    {
+      "name": "SCHEDULE",
+      "id": "#schedule",
+      "color": "#C6DEF166"
+    },
+    {
+      "name": "FAQ",
+      "id": "#faq",
+      "color": "#C9E4DE66"
+    },
+    {
+      "name": "SPONSORS",
+      "id": "#sponsors",
+      "color": "#DBCDF066"
+    },
+    {
+      "name": "APPLY",
+      "id": "https://registration.hexlabs.org/",
+      "color": "#F2C6DE66"
+    }
+  ]
+}

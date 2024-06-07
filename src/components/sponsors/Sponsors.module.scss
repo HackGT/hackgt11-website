@@ -1,0 +1,87 @@
+@import "../styles/variables.scss";
+
+
+@media only screen and (min-width: 1441px) {
+  .container {
+    width: 100% !important;
+    zoom: 1.33 !important;
+  }
+}
+
+// .container {
+//   padding-top: $p2/2;
+//   padding-bottom: $p2;
+//   padding-right: $p2;
+//   padding-left: $p2;
+//   position: relative;
+
+//   z-index: 100;
+
+//   font-family: "Scrapbook";
+//   color: whitesmoke;
+
+//   .title {
+//     z-index: 3;
+//     font-size: $header;
+//     color: black;
+//   }
+//   .sub_header {
+//     z-index: 3;
+//     font-family: "Titillium Web";
+//     font-size: $header/1.7;
+//   }
+//   .sub_text {
+//     z-index: 3;
+//     text-align: center;
+//     font-family: "Titillium Web";
+//     font-size: $subHeaderMobile/1.3;
+//   }
+//   .logos {
+//     position: relative;
+//   }
+// }
+
+// @media (max-width: 1200px) {
+//   .container {
+//     .title {
+//       font-size: $header/1.5;
+//     }
+//     .sub_header {
+//       font-size: $header/3;
+//     }
+//   }
+// }
+
+// #left_button {
+//   z-index: 3;
+// }
+
+// #right_button {
+//   z-index: 3;
+// }
+
+// @media (max-width: 1000px) {
+//   #left_button {
+//     display: none;
+//   }
+
+//   #right_button {
+//     display: none;
+//   }
+// }
+
+// /* add some intermediaries */
+// @media (max-width: 750px) {
+//   .container {
+//     .title {
+//       font-size: $headerMobile;
+//     }
+//     .sub_header {
+//       font-size: $headerMobile/1.5;
+//     }
+//   }
+// }
+
+// .border {
+//   border: 1px red solid;
+// }

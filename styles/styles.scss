@@ -1,0 +1,8 @@
+@import "variables.scss";
+
+.main {
+  position: relative;
+  background-size: 80px 80px !important;
+  background-image: linear-gradient(to right, grey .5px, transparent 0.25px),
+    linear-gradient(to bottom, grey .5px, transparent 0.25px) !important;
+}

@@ -1,0 +1,93 @@
+@import "../styles/variables.scss";
+
+@media (max-width: 800px) {
+  .main {
+    .crumpled_paper {
+      display: none;
+    }
+
+    .topHalf {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .rectangle {
+        display: none;
+      }
+
+      .logo_and_stars {
+        scale: 2;
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+
+      .hackgt_text {
+        scale: 2;
+        padding-bottom: 20px;
+      }
+
+      .brown_blurb {
+        scale: 2.5;
+        padding-bottom: 12px;
+      }
+
+      .dates_blurb {
+        scale: 2;
+      }
+    }
+
+    .botHalf {
+      .register_now {
+        scale: 0.7;
+        padding-right: 15px;
+      }
+
+      .location_blurb {
+        display: none;
+      }
+
+      .random_text_blurb {
+        display: none;
+      }
+    }
+
+  }
+}
+
+.register_now:hover {
+  animation: scale 1000ms ease-in-out;
+}
+@keyframes scale {
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@media only screen and (max-width: 1441px) {
+  .topHalf {
+    width: 100% !important;
+    zoom: 2 !important;
+  }
+
+  .botHalf {
+    width: 100% !important;
+    zoom: 2 !important;  
+  }
+}
+
+@media only screen {
+  .main {
+    width: 100% !important;
+    zoom: 2 !important;
+    .topHalf {
+      width: 100% !important;
+      zoom: 2 !important;
+    }
+  
+    .botHalf {
+      width: 100% !important;
+      zoom: 2 !important;  
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@import "../styles/variables.scss";
+
+.container {
+  color: black;
+  padding-bottom: $p3/2;
+  padding-top: $p3/1.2;
+  position: relative;
+
+  margin-left: 3%;
+  margin-right: 3%;
+
+  .clickable {
+    background-color: #b2e2d8;
+  }
+
+  .answer {
+    border: 2px black solid;
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+.arrow {
+  width: 30px;
+  margin-right: 1% !important;
+}
+
+.link {
+  color: #b2e2d8;
+  font-weight: bold;
+}
+
+.qa_shape {
+  position: relative;
+  z-index: 3;
+  .clickable {
+    cursor: pointer;
+  }
+
+  .both {
+    width: $faq;
+    text-align: left;
+    padding: $p1/3 $p1/2 $p1/3 $p1/2;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq_box {
+    .title {
+      font-size: $headerMobile;
+    }
+  }
+  .qa_shape {
+    .question {
+      font-size: $pv2;
+    }
+    .answer {
+      font-size: $pv2/1.2;
+    }
+    .both {
+      padding-left: 2vw;
+    }
+  }
+}
