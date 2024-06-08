@@ -25,7 +25,8 @@ const StickyNote = () => {
           top="0"
           zIndex={1}>
 
-          THIS SECTION IS THE GENERAL DESCRIPTION OF THE HACKGT11 EVENT:
+          THIS SECTION IS THE GENERAL DESCRIPTION OF THE HACKGT11 EVENT
+          (all information below is out of date)
           <br /> <br />
           Innovate, reimagine, and shape the future this year at HackGT X:
           Journal of Memories from October 13th - 15th! The tenth iteration of
