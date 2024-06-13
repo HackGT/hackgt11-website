@@ -1,0 +1,18 @@
+@import "../styles/variables.scss";
+
+.tracksChallenges {
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+@media (max-width: 800px) {
+  .tracksChallenges {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .tracksChallenges {
+    zoom: 1.33 !important;
+  }
+}

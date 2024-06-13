@@ -1,0 +1,12 @@
+@import "variables.scss";
+
+* {
+  scroll-behavior: smooth;
+  // background-image: url("../public/svg/global/grid-background-image.svg");
+}
+
+@font-face {
+  font-family: "Scrapbook";
+  src: url("/font/Scrapbook-3z20p.ttf");
+  font-weight: normal;
+}

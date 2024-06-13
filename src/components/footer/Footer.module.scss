@@ -1,0 +1,18 @@
+@import "../styles/variables.scss";
+
+// .footer_container {
+//   position: relative;
+//   padding-bottom: 20rem;
+// }
+
+@media only screen and (min-width: 1441px) {
+  .footer_container {
+    width: 100% !important;
+    zoom: 1.33 !important;
+  }
+}
+
+.footer_content {
+  font-family: "Comic Sans MS";
+  padding-bottom: 5rem;
+}

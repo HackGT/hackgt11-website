@@ -1,2 +1,8 @@
 # hackgt11-website
-Main HackGT11 Website
+HackGT11: Circus of Invention
+
+To setup:
+
+yarn install
+
+yarn dev

@@ -1,0 +1,103 @@
+.container {
+  position: fixed;
+  top: 6vh;
+  z-index: 100;
+  // width: 80vw;
+  margin-right: 10vw;
+  margin-left: 10vw;
+
+  .component {
+    font-size: 23px;
+    font-family: "Scrapbook";
+    font-weight: bold;
+    color: black;
+    z-index: 1000;
+  }
+
+  .component:hover {
+    text-decoration: underline;
+  }
+}
+
+.navbarContainer {
+  position: fixed;
+  z-index: 8;
+  width: 100vw;
+  opacity: 85%;
+  box-shadow: 10px 10px 100px 10px #331444;
+}
+
+.ellipse {
+  z-index: 9;
+  width: 9vw;
+  height: 3vw;
+  transform: rotate(7.059deg);
+  // flex-shrink: 0;
+  border-radius: 50%;
+}
+
+.ellipseText {
+  transform: rotate(-7.059deg) !important;
+}
+
+.menu {
+  visibility: hidden;
+}
+
+#mlh {
+  z-index: 10000;
+  max-width: 200px;
+  min-width: 100px;
+  height: auto;
+  position: fixed;
+  top: 0vh;
+  right: 10px;
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    // left: 5vw;
+    .component {
+      font-size: 18px;
+    }
+  }
+
+  #mlh {
+    min-width: 60px;
+    right: 16px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    padding-right: 9vw;
+    padding-left: 2vw;
+    .component {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .navbg,
+  .progressBar,
+  .container,
+  .navbarContainer {
+    visibility: hidden;
+  }
+
+  .menu {
+    visibility: visible;
+    z-index: 100;
+    right: 0vw;
+    padding: 2vw;
+    position: fixed;
+    top: 0vh;
+  }
+
+  #mlh {
+    max-width: 70px;
+    min-width: 50px;
+    left: 20px;
+  }
+}

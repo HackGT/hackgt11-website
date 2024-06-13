@@ -1,0 +1,68 @@
+@import "../styles/variables.scss";
+
+.about {
+  margin-right: 3%;
+}
+
+.aboutNotepad {
+  background: #6fc5b5;
+  border-radius: 25px;
+  padding-bottom: 3vh;
+  padding-top: 2vh;
+  opacity: 0.9;
+}
+
+@media (max-width: 800px) {
+  .aboutStack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutEllipse {
+    display: none;
+  }
+
+  .laptop {
+    display: none;
+  }
+
+  .aboutBanner {
+    display: none;
+  }
+
+  .about {
+    .aboutStack {
+      width: 90%;
+    }
+
+    .aboutNotepad {
+      width: 90%;
+    }
+
+    .aboutNotepadText {
+      width: 90%;
+    }
+
+    .alert {
+      width: 90%;
+      word-wrap: break-word;
+    }
+
+    .registerNowText {
+      font-size: 11px;
+    }
+
+    .registrationGrid {
+      height: 100px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1441px) {
+  .about {
+    width: 100% !important;
+    zoom: 1.33 !important;
+  }
+}
