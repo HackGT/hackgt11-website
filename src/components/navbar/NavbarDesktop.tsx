@@ -18,8 +18,8 @@ const NavbarDesktop = (ncp: NavbarDesktopProps) => {
         href={ncp.anchorLink}
         className={styles.component}
       >
-          <Center bg={ncp.bgColor} className={styles.ellipse}>
-            <div className={styles.ellipseText}>{ncp.name}</div>
+          <Center bg={ncp.bgColor} >
+            <div className={styles.Text}>{ncp.name}</div>
           </Center>
       </Link>
     </div>

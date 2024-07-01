@@ -8,7 +8,7 @@ const theme = extendTheme({
   // change heading fonts:
 
   fonts: {
-    heading: "Scrapbook",
+    heading: "Be Vietnam Pro", //section header font
     body: "'Be Vietnam Pro'",
   },
   colors: {

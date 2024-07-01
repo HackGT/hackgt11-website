@@ -10,7 +10,7 @@ const Faq = () => {
   return (
     <div className={styles.container}>
       <Center>
-        <Heading fontSize={{ base: "28px", lg: "48px" }} paddingBottom="20px">
+        <Heading fontSize={{ base: "28px", lg: "48px" }} fontFamily = "Be Vietnam Pro" paddingBottom="20px">
           FAQ
         </Heading>
       </Center>

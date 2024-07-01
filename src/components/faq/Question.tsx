@@ -18,7 +18,7 @@ const Question = (qp: QuestionProps) => {
       }}>
       <Text
         className={`${styles.question} ${styles.both}`}
-        fontFamily="Scrapbook"
+        fontFamily="Be Vietnam Pro"
         fontSize={{ base: "18px", lg: "22px" }}>
         {qp.question}
       </Text>

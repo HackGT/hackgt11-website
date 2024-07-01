@@ -21,12 +21,12 @@ const TrackCard = (props: trackCardProps) => {
           border="1px black solid"
           boxShadow="4px 4px 4px rgba(0, 0, 0, 0.5)">
           <Text
-            fontFamily={"Scrapbook"}
+            fontFamily={"Be Vietnam Pro"}
             fontSize={{ base: "16px", lg: "20px" }}>
             {props.trackName}
           </Text>
         </Box>
-        <Text textAlign="center" fontSize={{ base: "16px", lg: "20px" }}>
+        <Text textAlign="center" fontSize={{ base: "16px", lg: "14px" }}>
           {props.trackDescription}
         </Text>
       </VStack>
@@ -35,6 +35,7 @@ const TrackCard = (props: trackCardProps) => {
 };
 
 const TracksChallenges = () => {
+  //Currently, this section has 3 columns with the middle column having the sustain track from hackgtX
   return (
     <>
       <Heading fontSize={{ base: "28px", lg: "48px" }} textAlign="center">
@@ -54,7 +55,7 @@ const TracksChallenges = () => {
           />
         </Box>
         <Box flexDirection="column">
-          <Image src={airplane} alt="airplane" />
+          {/* <Image src={airplane} alt="airplane" /> */}
           <TrackCard
             trackName={tracks[2].trackName}
             trackDescription={tracks[2].trackDescription}

@@ -19,7 +19,7 @@ const StickyNote = () => {
       <Center>
         <Text
           className={styles.aboutNotepadText}
-          fontSize={{ sm: "12px", lg: "18px" }}
+          fontSize={{ sm: "12px", lg: "14px" }}
           px="3%"
           py="2%"
           top="0"
@@ -61,21 +61,21 @@ const RegisterNow = () => {
   return (
     <Box
       className={styles.registerNow}
-      display="grid"
+      display="flex"
       justifyContent="center"
       alignContent="center"
       width="70%">
-      <Image
+      {/* <Image
         className={styles.registrationGrid}
         src={"/img/about/registration_grid.png"}
         gridArea="1 / 1"
         textAlign="center"
         alt="Grid box"
-      />
+      /> */}
       <Heading
         className={styles.registerNowText}
         fontSize={{ sm: "12px", lg: "24px" }}
-        gridArea="1 / 1"
+        // gridArea="1 / 1"
         textAlign="center"
         alignSelf="center">
         Registration is <strong>closed</strong>!
@@ -94,21 +94,21 @@ const About = () => {
       <VStack className={styles.aboutStack} spacing={8}>
         <HStack py="8%">
           <Heading fontSize={{ base: "28px", lg: "48px" }}>About</Heading>
-          <Image
+          {/* <Image    This image was a part of hackgtX if you want to delete this sentence and uncomment this section of code.
             className={styles.aboutEllipse}
             src={"/img/about/about-ellipse.png"}
             width={"30%"}
             position="absolute"
             left={"-8%"}
             alt="Ellipse"
-          />
+          /> */}
         </HStack>
         <StickyNote />
         <RegisterNow />
-        <Alert className={styles.alert} width="80%">
-          <AlertIcon />
+        <Alert className={styles.alert} width="60%">
+          {/* <AlertIcon /> */}
           <AlertDescription
-            fontSize={{ base: "12px", lg: "18px" }}
+            fontSize={{ base: "12px", lg: "14px" }}
             fontFamily="Be Vietnam Pro">
             Participants will only be able to submit their project to ONE of the
             five tracks. In addition, each track will have the option to be

@@ -15,8 +15,8 @@ const Home: NextPage = (props) => {
   return (
     <div className="main">
       <Head>
-        <title>HackGT X: A journal of memories</title>
-        <meta name="description" content="Time for a blast to the past" />
+        <title>HackGT 11: Circus of Invention</title>
+        <meta name="description" content="Circus of Invention" />
         <link
           rel="icon"
           type="image/png"
