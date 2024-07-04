@@ -19,7 +19,7 @@ const Schedule = () => {
           textAlign="center"
           alignSelf="center"
           fontSize={{ sm: "20px", lg: "35px" }}>
-          You can find our schedule<br/> on <a href="https://live.hexlabs.org">live.hexlabs.org</a>!
+          {/* <a href="https://live.hexlabs.org">Interest Form</a> */}
         </Heading>
       </Box>
     </Center>

@@ -33,13 +33,14 @@ const Navbar = (np: NavProps) => {
   return (
     <div>
       <a
-        href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white"
+        href="https://mlh.io/seasons/2025/events"
         target="_blank"
         rel="noreferrer"
         id={styles.mlh}>
         <img
-          src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg"
-          alt="Major League Hacking 2024 Hackathon Season"
+          src="/img/global/mlh-trust-badge-2025-blue.png"
+          alt="Major League Hacking 2025 Hackathon Season"
+          style={{ width: '100px', height: 'auto' }}
         />
       </a>
       <Center>

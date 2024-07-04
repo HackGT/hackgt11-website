@@ -15,13 +15,13 @@ const QA = (qap: QAProps) => {
 
   return (
     <div className={styles.qa_shape}>
-      <Box
+      {/* <Box
         onClick={() => {
           setQuestionClicked(!questionClicked);
         }}
       >
         <Question open={questionClicked} question={qap.question} />
-      </Box>
+      </Box> */}
       {questionClicked ? <Answer answer={qap.answer} /> : <div />}
     </div>
   );

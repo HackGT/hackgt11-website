@@ -39,41 +39,9 @@ const TracksChallenges = () => {
   return (
     <>
       <Heading fontSize={{ base: "28px", lg: "48px" }} textAlign="center">
-        Tracks and Challenges
       </Heading>
       <Box className={styles.tracksChallenges} display="flex">
-        <Box flexDirection="column">
-          <TrackCard
-            trackName={tracks[0].trackName}
-            trackDescription={tracks[0].trackDescription}
-            color={tracks[0].color}
-          />
-          <TrackCard
-            trackName={tracks[1].trackName}
-            trackDescription={tracks[1].trackDescription}
-            color={tracks[1].color}
-          />
-        </Box>
-        <Box flexDirection="column">
-          {/* <Image src={airplane} alt="airplane" /> */}
-          <TrackCard
-            trackName={tracks[2].trackName}
-            trackDescription={tracks[2].trackDescription}
-            color={tracks[2].color}
-          />
-        </Box>
-        <Box flexDirection="column">
-          <TrackCard
-            trackName={tracks[3].trackName}
-            trackDescription={tracks[3].trackDescription}
-            color={tracks[3].color}
-          />
-          <TrackCard
-            trackName={tracks[4].trackName}
-            trackDescription={tracks[4].trackDescription}
-            color={tracks[4].color}
-          />
-        </Box>
+        
       </Box>
     </>
   );

@@ -19,10 +19,10 @@ const Sponsors = () => {
           alignSelf="center"
           borderRadius="10px"
           fontSize={{ sm: "20px", lg: "35px" }}>
-          Thank you so much to our sponsors!
+          {/* Thank you so much to our sponsors! */}
         </Heading>
         <br/><br/>
-        <Image src="/img/sponsors.png" alt="sponsors" />
+        {/* <Image src="/img/sponsors.png" alt="sponsors" /> */}
         <br/><br/>
       </Box>
     </Center>

@@ -47,13 +47,13 @@ const Main = (mp: MainProps) => {
         src="/svg/home/crumpled_paper.svg"
         alt="crumpled_paper"
       /> */}
-      <VStack
+      {/* <VStack
         className={styles.title_box}
         justifyContent="center"
         alignItems="center">
         <TopHalf />
         <BottomHalf />
-      </VStack>
+      </VStack> */}
     </Box>
   );
 };

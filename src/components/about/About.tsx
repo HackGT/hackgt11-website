@@ -25,7 +25,7 @@ const StickyNote = () => {
           top="0"
           zIndex={1}>
 
-          THIS SECTION IS THE GENERAL DESCRIPTION OF THE HACKGT11 EVENT
+          {/* THIS SECTION IS THE GENERAL DESCRIPTION OF THE HACKGT11 EVENT
           (all information below is out of date)
           <br /> <br />
           Innovate, reimagine, and shape the future this year at HackGT X:
@@ -39,7 +39,7 @@ const StickyNote = () => {
           students of all backgrounds, skill levels, and experiences to innovate
           and showcase their ideas. HackGT brings you an action-packed,
           memorable weekend filled with networking opportunities,
-          community-building activities, and aesthetic swag!
+          community-building activities, and aesthetic swag! */}
           {/*
           <br /> <br />
            <Text fontWeight={800}>Travel Reimbursements</Text>
@@ -78,7 +78,7 @@ const RegisterNow = () => {
         // gridArea="1 / 1"
         textAlign="center"
         alignSelf="center">
-        Registration is <strong>closed</strong>!
+        <a href="https://forms.gle/iSJYV8Td3Fouw3ps6">Interest Form</a>
       </Heading>
     </Box>
   );
@@ -93,7 +93,7 @@ const About = () => {
       alignItems="center">
       <VStack className={styles.aboutStack} spacing={8}>
         <HStack py="8%">
-          <Heading fontSize={{ base: "28px", lg: "48px" }}>About</Heading>
+          <Heading fontSize={{ base: "28px", lg: "48px" }}>Coming Soon!</Heading>
           {/* <Image    This image was a part of hackgtX if you want to delete this sentence and uncomment this section of code.
             className={styles.aboutEllipse}
             src={"/img/about/about-ellipse.png"}
@@ -103,14 +103,14 @@ const About = () => {
             alt="Ellipse"
           /> */}
         </HStack>
-        <StickyNote />
+        {/* <StickyNote /> */}
         <RegisterNow />
         <Alert className={styles.alert} width="60%">
           {/* <AlertIcon /> */}
           <AlertDescription
             fontSize={{ base: "12px", lg: "14px" }}
             fontFamily="Be Vietnam Pro">
-            Participants will only be able to submit their project to ONE of the
+            {/* Participants will only be able to submit their project to ONE of the
             five tracks. In addition, each track will have the option to be
             submitted as either emerging or advanced. You don&apos;t need to
             have any experience to join in! <br />
@@ -119,7 +119,12 @@ const About = () => {
             approachable, beginner-friendly experience enriched with workshops
             and project support, while more seasoned hackers can throw their hat
             in the ring for a higher stakes pool of competition! We&apos;re here
-            to meet you on your hacking journey at any level!
+            to meet you on your hacking journey at any level! */}
+            Note: The form above is not for registration but for interest only.
+            <br />
+            <br />
+            This September at Georgia Tech, get ready for a whirlwind of fun, thrills, and excitement! Stay tuned for details!
+            
           </AlertDescription>
         </Alert>
         <br />

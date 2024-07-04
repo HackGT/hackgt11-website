@@ -11,7 +11,7 @@ const Faq = () => {
     <div className={styles.container}>
       <Center>
         <Heading fontSize={{ base: "28px", lg: "48px" }} fontFamily = "Be Vietnam Pro" paddingBottom="20px">
-          FAQ
+          {/* FAQ */}
         </Heading>
       </Center>
       <VStack spacing={"20px"}>
