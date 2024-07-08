@@ -1,15 +1,30 @@
 @import "../styles/variables.scss";
 
-.about {
-  margin-right: 3%;
+.candyShop {
+  height: 16vw; // or 200px
+  z-index: 1;
 }
 
-.aboutNotepad {
-  background: #6fc5b5;
-  border-radius: 25px;
-  padding-bottom: 3vh;
-  padding-top: 2vh;
-  opacity: 0.9;
+.candyBear {
+  height: 8vw; // or 100px
+  position: relative;
+  top: 2vw;
+  left: 4vw;
+  z-index: 10;
+}
+
+.balloonBear {
+  height: 25vw;
+  display: flex;
+  align-self: start;
+  position: relative;
+  top: -10vw;
+  left: 6vw;
+}
+
+.aboutStack {
+  display: flex;
+  justify-content: flex-end;
 }
 
 @media (max-width: 800px) {

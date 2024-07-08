@@ -1,8 +1,7 @@
 import Image from "next/image";
 import styles from "./TracksChallenges.module.scss";
-import { Alert, AlertIcon, Box, VStack, Text, Heading } from "@chakra-ui/react";
+import { Alert, AlertIcon, Box, VStack, Text, Heading, HStack, Flex, Spacer } from "@chakra-ui/react";
 import { tracks } from "./tracks.json";
-import airplane from "../../../public/img/tracks/airplane.svg";
 
 interface trackCardProps {
   trackName: string;
@@ -38,11 +37,41 @@ const TracksChallenges = () => {
   //Currently, this section has 3 columns with the middle column having the sustain track from hackgtX
   return (
     <>
-      <Heading fontSize={{ base: "28px", lg: "48px" }} textAlign="center">
+      <Heading fontSize={{ base: "28px", lg: "48px" }} px="5vw" my="-5vw">
+        Tracks and Challenges
       </Heading>
-      <Box className={styles.tracksChallenges} display="flex">
-        
-      </Box>
+      <Flex className={styles.tracksChallenges}>
+        <Text width="50%" textAlign="center" alignContent="center">Coming Soon!</Text>
+        <Image
+          height="270px"
+          width="180px"
+          src={"/img/tracks/sign-post-1.png"}
+          alt="sign post"
+        />
+      </Flex>
+      <Spacer height="40vw"/>
+      <VStack ml="5vw" alignItems="start">
+        <Image
+          height="200vw"
+          width="400vw"
+          src={"/img/snack-bear-grp.png"}
+          alt="snack bear"
+        />
+        <Box alignSelf="end">
+          <Image
+            height="500vw"
+            width="240vw"
+            src={"/img/merry-go-round.png"}
+            alt="merry go round"
+          />
+        </Box>
+        <Image
+            height="270px"
+            width="180px"
+            src={"/img/sign-post-2.png"}
+            alt="sign post"
+          />
+      </VStack>
     </>
   );
 };

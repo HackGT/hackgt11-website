@@ -2,7 +2,14 @@
 
 .main {
   position: relative;
-  background-size: 80px 80px !important;
-  background-image: linear-gradient(to right, grey .5px, transparent 0.25px),
-    linear-gradient(to bottom, grey .5px, transparent 0.25px) !important;
+  // background-size: 8px 80px !important;
+  background-color: #C2EAF3
+}
+
+.circus_bg {
+  background-color: #ADDA99;
+  background-image: url("../public/svg/global/path.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  height: 100%;
 }

@@ -13,40 +13,43 @@ import Footer from "../src/components/footer/Footer";
 
 const Home: NextPage = (props) => {
   return (
-    <div className="main">
-      <Head>
-        <title>HackGT 11: Circus of Invention</title>
-        <meta name="description" content="Circus of Invention" />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/icon/logo/hackgtx-512x512.png"
-        />
-      </Head>
-      <Navbar anchors={links.components} />
+    <div>
+      <div className="main">
+        <Head>
+          <title>HackGT 11: Circus of Invention</title>
+          <meta name="description" content="Circus of Invention" />
+          <link
+            rel="icon"
+            type="image/png"
+            href="/icon/logo/hackgtx-512x512.png"
+          />
+        </Head>
+        <Navbar anchors={links.components} />
 
-      <section id="home">
-        <Main toJump="#registration" />
-      </section>
-      <br />
-      <section id="about">
-        <About />
-      </section>
-      <section id="tracks_and_challenges">
-        <TracksChallenges />
-      </section>
-      <section id="schedule">
-        <Schedule />
-      </section>
-      <section id="faq">
-        <Faq />
-      </section>
-      <section id="sponsors">
-        <Sponsors />
-      </section>
-      <section id="footer">
-        <Footer />
-      </section>
+        {/* <section id="home"> */}
+          <Main />
+        {/* </section> */}
+      </div>
+      <div className="circus_bg">
+        <section id="about">
+          <About />
+        </section>
+        <section id="tracks_and_challenges">
+          <TracksChallenges />
+        </section>
+        <section id="schedule">
+          <Schedule />
+        </section>
+        <section id="faq">
+          <Faq />
+        </section>
+        <section id="sponsors">
+          <Sponsors />
+        </section>
+        <section id="footer">
+          <Footer />
+        </section>
+      </div>
     </div>
   );
 };

@@ -1,20 +1,21 @@
 import React from "react";
-import { Box, Center, Image, Heading } from "@chakra-ui/react";
+import { Box, Center, Image, Heading, Spacer } from "@chakra-ui/react";
 
 const Schedule = () => {
   return (
     <Center>
       <Box
-        display="flex"
+        display="grid"
         justifyContent="center"
         alignContent="center"
-        width="70%">
-        {/* <Image
-          src="/img/global/green_sticky.png"
+        width="50%">
+        <Spacer gridArea="1 / 1" height="20vw" />
+        <Image
+          src="/img/schedule/tickets.png"
           alt="schedule"
-          gridArea="1 / 1"
+          gridArea="2 / 1"
           textAlign="center"
-        /> */}
+        />
         <Heading
           textAlign="center"
           alignSelf="center"
