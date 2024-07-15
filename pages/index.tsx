@@ -11,45 +11,40 @@ import Navbar from "../src/components/navbar/Navbar";
 import Schedule from "../src/components/schedule/Schedule";
 import Footer from "../src/components/footer/Footer";
 
-const Home: NextPage = (props) => {
+const Home: NextPage = () => {
   return (
-    <div>
-      <div className="main">
-        <Head>
-          <title>HackGT 11: Circus of Invention</title>
-          <meta name="description" content="Circus of Invention" />
-          <link
-            rel="icon"
-            type="image/png"
-            href="/icon/logo/hackgtx-512x512.png"
-          />
-        </Head>
-        <Navbar anchors={links.components} />
+    <div className="circus_bg">
+      <Head>
+        <title>HackGT 11: Circus of Invention</title>
+        <meta name="description" content="Circus of Invention" />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/icon/logo/hackgtx-512x512.png"
+        />
+      </Head>
+      <Navbar anchors={links.components} />
 
-        {/* <section id="home"> */}
-          <Main />
-        {/* </section> */}
-      </div>
-      <div className="circus_bg">
-        <section id="about">
-          <About />
-        </section>
-        <section id="tracks_and_challenges">
-          <TracksChallenges />
-        </section>
-        <section id="schedule">
-          <Schedule />
-        </section>
-        <section id="faq">
-          <Faq />
-        </section>
-        <section id="sponsors">
-          <Sponsors />
-        </section>
-        <section id="footer">
-          <Footer />
-        </section>
-      </div>
+      <Main />
+
+      <section id="about">
+        <About />
+      </section>
+      <section id="tracks_and_challenges">
+        <TracksChallenges />
+      </section>
+      <section id="schedule">
+        <Schedule />
+      </section>
+      <section id="faq">
+        <Faq />
+      </section>
+      <section id="sponsors">
+        <Sponsors />
+      </section>
+      <section id="footer">
+        <Footer />
+      </section>
     </div>
   );
 };

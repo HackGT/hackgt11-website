@@ -2,11 +2,20 @@
 
 * {
   scroll-behavior: smooth;
-  // background-image: url("../public/svg/global/grid-background-image.svg");
+  // background-image: url("../public/svg/global/circus-background.svg");
 }
 
 @font-face {
   font-family: "Scrapbook";
   src: url("/font/Scrapbook-3z20p.ttf");
   font-weight: normal;
+}
+
+body {
+  background-color: #ADDA99;
+  background-image: url("/public/svg/global/circus-background.svg");
+  // background-image: url("/public/svg/global/path.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

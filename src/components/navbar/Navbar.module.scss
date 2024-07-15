@@ -2,7 +2,6 @@
   position: fixed;
   top: 6vh;
   z-index: 100;
-  // width: 80vw;
   margin-right: 10vw;
   margin-left: 10vw;
 
@@ -27,12 +26,24 @@
   box-shadow: 10px 10px 100px 10px #331444;
 }
 
+.imageBackground {
+  background-image: url('/img/navbar/ticket.png');
+  background-size: cover;
+  background-position: center;
+  width: 150px; /* Adjust as necessary */
+  height: 70px; /* Adjust as necessary */
+}
+
+.textImage {
+  width: 60%; /* Adjust as necessary */
+  height: auto;
+}
+
 .ellipse {
   z-index: 9;
   width: 9vw;
   height: 3vw;
   transform: rotate(7.059deg);
-  // flex-shrink: 0;
   border-radius: 50%;
 }
 
@@ -56,7 +67,6 @@
 
 @media screen and (max-width: 1300px) {
   .container {
-    // left: 5vw;
     .component {
       font-size: 18px;
     }

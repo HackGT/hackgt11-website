@@ -23,6 +23,7 @@ interface Anchor {
   name: string;
   id: string;
   color: string;
+  img: string;
 }
 
 interface NavProps {
@@ -51,6 +52,7 @@ const Navbar = (np: NavProps) => {
               name={anchor.name}
               anchorLink={anchor.id}
               bgColor={anchor.color}
+              img={anchor.img}
             />
           ))}
         </HStack>

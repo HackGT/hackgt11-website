@@ -4,7 +4,13 @@ import styles from "./Main.module.scss";
 const Main = () => {
   return (
     <Box className={styles.main}>
-      <Heading>HackGT 11</Heading>
+      <Center>
+        <Image
+          className={styles.image}
+          src="/img/global/HackGT11.png"
+          alt="HackGT 11"
+        />
+      </Center>
     </Box>
   );
 };
