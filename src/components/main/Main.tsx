@@ -5,11 +5,11 @@ const Main = () => {
   return (
     <Box className={styles.main}>
       <Center>
-        <Image
+        {/* <Image
           className={styles.image}
           src="/img/global/HackGT11.png"
           alt="HackGT 11"
-        />
+        /> */}
       </Center>
     </Box>
   );

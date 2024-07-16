@@ -23,7 +23,7 @@ const About = () => {
       width="100%">
       <VStack width="100%" display="flex">
         <VStack width="50%" spacing={8} display="flex" alignSelf="flex-end" py="5vw">
-          <Flex width="100%" justifyContent="center" alignItems="flex-end" alignContent="flex-end">
+          {/* <Flex width="100%" justifyContent="center" alignItems="flex-end" alignContent="flex-end">
             <Image
               className={styles.candyBear}
               src={"/img/about/candy-bear.png"}
@@ -35,7 +35,7 @@ const About = () => {
               alt="candy shop"
             />
           </Flex>
-          <br />
+          <br /> */}
           <Heading textAlign="center" fontSize={{ base: "28px", lg: "48px" }} pr="2vw">About</Heading>
           <Text textAlign="center" width="100%" pr="2vw" lineHeight="2">
             Shape the future at the 🎪 Circus of Inventions from September __ to September __! 🎡
@@ -69,13 +69,13 @@ const About = () => {
               
             </AlertDescription>
           </Alert> */}
-          <br />
+          {/* <br /> */}
         </VStack>
-        <Image
+        {/* <Image
           className={styles.balloonBear}
           src={"/img/about/balloon-bear.png"}
           alt="balloon bear"
-        />
+        /> */}
       </VStack>
     </Box>
   );

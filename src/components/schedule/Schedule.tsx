@@ -4,7 +4,7 @@ import { Box, Center, Image, Heading, Spacer } from "@chakra-ui/react";
 const Schedule = () => {
   return (
     <Center>
-      <Box
+      {/* <Box
         display="grid"
         justifyContent="center"
         alignContent="center"
@@ -20,9 +20,9 @@ const Schedule = () => {
           textAlign="center"
           alignSelf="center"
           fontSize={{ sm: "20px", lg: "35px" }}>
-          {/* <a href="https://live.hexlabs.org">Interest Form</a> */}
+          <a href="https://live.hexlabs.org">Interest Form</a>
         </Heading>
-      </Box>
+      </Box> */}
     </Center>
   );
 };

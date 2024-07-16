@@ -3,14 +3,14 @@
 .main {
   position: relative;
   // background-size: 8px 80px !important;
-  background-color: #C2EAF3
+  // background-color: #C2EAF3
 }
 
 .circus_bg {
-  background-color: #b9d98e;
+  background-color: #FFF4BD;
   background-image: url("../public/svg/global/circus-background.svg");
-  // background-image: url("/public/svg/global/path.svg");
   background-repeat: no-repeat;
+  background-position-y: 5vw;
   background-position-x: center;
-  height: auto;
+  background-size: cover;
 }

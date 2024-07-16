@@ -42,15 +42,15 @@ const TracksChallenges = () => {
       </Heading>
       <Flex className={styles.tracksChallenges}>
         <Text width="50%" textAlign="center" alignContent="center">Coming Soon!</Text>
-        <Image
+        {/* <Image
           height="270px"
           width="180px"
           src={"/img/tracks/sign-post-1.png"}
           alt="sign post"
-        />
+        /> */}
       </Flex>
-      <Spacer height="40vw"/>
-      <VStack ml="5vw" alignItems="start">
+      {/* <Spacer height="40vw"/> */}
+      {/* <VStack ml="5vw" alignItems="start">
         <Image
           height="200vw"
           width="400vw"
@@ -71,7 +71,7 @@ const TracksChallenges = () => {
             src={"/img/sign-post-2.png"}
             alt="sign post"
           />
-      </VStack>
+      </VStack> */}
     </>
   );
 };

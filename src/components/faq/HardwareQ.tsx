@@ -15,7 +15,7 @@ const QA = () => {
         <HStack>
           <Text
             className={`${styles.question} ${styles.both}`}
-            fontFamily="Scrapbook">
+            fontFamily="Montserrat">
             Will hardware be provided?
           </Text>
           {questionClicked ? (

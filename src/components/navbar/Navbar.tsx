@@ -22,7 +22,6 @@ import { useEffect } from "react";
 interface Anchor {
   name: string;
   id: string;
-  color: string;
   img: string;
 }
 
@@ -41,17 +40,16 @@ const Navbar = (np: NavProps) => {
         <img
           src="/img/global/mlh-trust-badge-2025-blue.png"
           alt="Major League Hacking 2025 Hackathon Season"
-          style={{ width: '100px', height: 'auto' }}
+          style={{ width: '75px', height: 'auto' }}
         />
       </a>
       <Center>
-        <HStack draggable="false" className={styles.container} spacing={"4vw"}>
+        <HStack draggable="false" className={styles.container} spacing={"1vw"}>
           {np.anchors.map((anchor) => (
             <NavbarDesktop
               key={null}
               name={anchor.name}
               anchorLink={anchor.id}
-              bgColor={anchor.color}
               img={anchor.img}
             />
           ))}

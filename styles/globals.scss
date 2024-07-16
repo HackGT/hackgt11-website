@@ -6,16 +6,13 @@
 }
 
 @font-face {
-  font-family: "Scrapbook";
-  src: url("/font/Scrapbook-3z20p.ttf");
+  font-family: "Horse Saguaro";
+  src: url("/font/HorseSaguaro-9MMy7.ttf");
   font-weight: normal;
 }
 
-body {
-  background-color: #ADDA99;
-  background-image: url("/public/svg/global/circus-background.svg");
-  // background-image: url("/public/svg/global/path.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+@font-face {
+  font-family: "Montserrat";
+  src: url("/font/Montserrat-Regular.ttf");
+  font-weight: normal;
 }
