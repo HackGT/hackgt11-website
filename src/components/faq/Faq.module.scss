@@ -11,11 +11,19 @@
 
   .clickable {
     background-color: #b2e2d8;
+    border-radius: 20px; /* Rounded corners all around */
+    padding: 10px; /* Add padding for better text spacing */
+  }
+
+  .clickable.open {
+    border-radius: 20px 20px 0 0; /* Rounded corners only on the top when open */
   }
 
   .answer {
-    border: 2px black solid;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.141); /* Adjust the opacity as needed */
+    color: white;
+    border-radius: 0 0 20px 20px; /* Rounded corners only on the bottom */
+    padding: 10px; /* Add padding for better text spacing */
   }
 }
 
@@ -32,8 +40,11 @@
 .qa_shape {
   position: relative;
   z-index: 3;
+  overflow: hidden; /* Ensure child elements don't overflow rounded corners */
+  
   .clickable {
     cursor: pointer;
+    color: white;
   }
 
   .both {
@@ -41,6 +52,13 @@
     text-align: left;
     padding: $p1/3 $p1/2 $p1/3 $p1/2;
   }
+}
+
+.title {
+  font-family: "Horse Saguaro" !important;
+  font-weight: normal !important;
+  font-size: 3em !important;
+  color: white;
 }
 
 @media (max-width: 480px) {
@@ -52,6 +70,7 @@
   .qa_shape {
     .question {
       font-size: $pv2;
+      color: white;
     }
     .answer {
       font-size: $pv2/1.2;

@@ -1,4 +1,4 @@
-import { Image, Text, VStack, Heading, Center } from "@chakra-ui/react";
+import { Image, Text, VStack, Heading, Center, HStack } from "@chakra-ui/react";
 import QA from "./QA";
 import styles from "./Faq.module.scss";
 
@@ -10,9 +10,19 @@ const Faq = () => {
   return (
     <div className={styles.container}>
       <Center>
-        <Heading fontSize={{ base: "28px", lg: "48px" }} fontFamily = "Be Vietnam Pro" paddingBottom="20px">
-          {/* FAQ */}
-        </Heading>
+      <HStack spacing="2vw" alignItems="center">
+          <Image
+            className={styles.star_blue}
+            src="/svg/faq/star.svg"
+            alt="star"
+          />
+          <Heading className={styles.title}>FAQ</Heading>
+          <Image
+            className={styles.star_blue}
+            src="/svg/faq/star.svg"
+            alt="star"
+          />
+        </HStack>
       </Center>
       <VStack spacing={"20px"}>
         {qas.qas.map((entry) =>

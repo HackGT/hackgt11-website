@@ -15,14 +15,17 @@ const QA = (qap: QAProps) => {
 
   return (
     <div className={styles.qa_shape}>
-      {/* <Box
+      <Box
         onClick={() => {
           setQuestionClicked(!questionClicked);
         }}
+        className={`${styles.clickable} ${questionClicked ? 'open' : ''}`}
       >
         <Question open={questionClicked} question={qap.question} />
-      </Box> */}
-      {questionClicked ? <Answer answer={qap.answer} /> : <div />}
+      </Box>
+      <Collapse in={questionClicked} animateOpacity>
+        <Answer answer={qap.answer} />
+      </Collapse>
     </div>
   );
 };
