@@ -40,22 +40,22 @@ const About = () => {
         alt="grass"
       />
       <Image
-        className={styles.grass1}
+        className={styles.grass_a1}
         src="/svg/about/grass1.svg"
         alt="grass"
       />
       <Image
-        className={styles.grass2}
+        className={styles.grass_a2}
         src="/svg/about/grass2.svg"
         alt="grass"
       />
       <Image
-        className={styles.grass3}
+        className={styles.grass_a3}
         src="/svg/about/grass2.svg"
         alt="grass"
       />
       <Image
-        className={styles.grass4}
+        className={styles.grass_a4}
         src="/svg/about/grass1.svg"
         alt="grass"
       />
@@ -85,24 +85,24 @@ const About = () => {
           spacing={{ base: "1vw", lg: "2vw" }}>
           <HStack spacing="2vw" alignItems="center">
             <Image
-              className={styles.star}
-              src="/svg/about/star.svg"
+              className={styles.star_white}
+              src="/svg/about/star_white.svg"
               alt="star"
             />
             <Heading className={styles.title}>ABOUT</Heading>
             <Image
-              className={styles.star}
-              src="/svg/about/star.svg"
+              className={styles.star_white}
+              src="/svg/about/star_white.svg"
               alt="star"
             />
           </HStack>
           <Text className={styles.description}>
-          Shape the future at the 🎪 Circus of Inventions from <b>September 27th</b> to <b>September 29th!</b> 🎡 
-          The 11th edition of our flagship hackathon brings you a transformed carnival of creativity for all innovators, builders, and visionaries. 
-          <br /><br />
-          Each year, HackGT welcomes over 1500+ hackers 🤹 from around the world to tackle novel challenges, win exciting prizes, and make lasting connections 🎠! 
-          HackGT's stage will be open to everyone, regardless of background, experience, or skill level, to showcase their innovative ideas. 🎢 
-          Hackers can expect a thrilling weekend filled with networking opportunities, top-tier prizes, engaging mini-events, and lots of swag! 🏆
+            Shape the future at the 🎪 Circus of Inventions from <b>September 27th</b> to <b>September 29th!</b> 🎡 
+            The 11th edition of our flagship hackathon brings you a transformed carnival of creativity for all innovators, builders, and visionaries. 
+            <br /><br />
+            Each year, HackGT welcomes over 1500+ hackers 🤹 from around the world to tackle novel challenges, win exciting prizes, and make lasting connections 🎠! 
+            HackGT's stage will be open to everyone, regardless of background, experience, or skill level, to showcase their innovative ideas. 🎢 
+            Hackers can expect a thrilling weekend filled with networking opportunities, top-tier prizes, engaging mini-events, and lots of swag! 🏆
           </Text>
         </VStack>
       </Box>
@@ -117,7 +117,7 @@ const About = () => {
         alt="beardell with a balloon"
       />
       <Image
-        className={styles.grass5}
+        className={styles.grass_a5}
         src="/svg/about/grass2.svg"
         alt="grass"
       />

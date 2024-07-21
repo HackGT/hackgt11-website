@@ -36,28 +36,28 @@
   z-index: 1;
 }
 
-.grass1, .grass2, .grass3, .grass4, .grass5 {
+.grass_a1, .grass_a2, .grass_a3, .grass_a4, .grass_a5 {
   position: absolute;
   width: 2%;
   z-index: 5;
 }
 
-.grass1 {
+.grass_a1 {
   top: 16%;
   right: 36.75%;
 }
 
-.grass2 {
+.grass_a2 {
   top: 13.5%;
   right: 34%;
 }
 
-.grass3 {
+.grass_a3 {
   top: 14.5%;
   right: 14%;
 }
 
-.grass4 {
+.grass_a4 {
   top: 10%;
   right: 12%;
 }
@@ -83,7 +83,7 @@
   width: 20%;
 }
 
-.grass5 {
+.grass_a5 {
   left: 31%;
   bottom: 7%;
 }
@@ -149,7 +149,7 @@
     font-size: 2.3vw;
   }
 
-  .star {
+  .star_white {
     width: 2.5vw;
   }
 
@@ -170,22 +170,22 @@
     top: -25.75%;
   }
 
-  .grass1 {
+  .grass_a1 {
     top: 11.5%;
     right: 37%;
   }
   
-  .grass2 {
+  .grass_a2 {
     top: 9.5%;
     right: 34%;
   }
   
-  .grass3 {
+  .grass_a3 {
     top: 10%;
     right: 13.75%;
   }
   
-  .grass4 {
+  .grass_a4 {
     top: 7%;
     right: 11.75%;
   }
@@ -196,7 +196,7 @@
     width: 20%;
   }
   
-  .grass5 {
+  .grass_a5 {
     left: 31%;
     bottom: 30%;
   }

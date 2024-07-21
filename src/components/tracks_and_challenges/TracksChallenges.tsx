@@ -1,6 +1,7 @@
 import styles from "./TracksChallenges.module.scss";
 import { Alert, AlertIcon, Box, VStack, Text, Heading, HStack, Flex, Spacer, Image } from "@chakra-ui/react";
 import { tracks } from "./tracks.json";
+import { useState } from "react";
 
 interface trackCardProps {
   trackName: string;
@@ -32,26 +33,77 @@ const TrackCard = (props: trackCardProps) => {
   );
 };
 
+enum Tracks {
+  NONE,
+  EMERGING,
+  GENERAL
+}
+
 const TracksChallenges = () => {
-  //Currently, this section has 3 columns with the middle column having the sustain track from hackgtX
+  const [trackClicked, setTrackClicked] = useState(Tracks.NONE);
+
   return (
     <Box border="solid blue" className={styles.tracksChallenges}>
       <Image
         className={styles.emerging_tent}
         src="/svg/tracks/emerging_tent.svg"
         alt="emerging"
+        onClick={() => {trackClicked != Tracks.EMERGING ? setTrackClicked(Tracks.EMERGING) : setTrackClicked(Tracks.NONE)}}
       />
       <Image
         className={styles.general_tent}
         src="/svg/tracks/general_tent.svg"
         alt="general"
+        onClick={() => {trackClicked != Tracks.GENERAL ? setTrackClicked(Tracks.GENERAL) : setTrackClicked(Tracks.NONE)}}
       />
-      <Heading fontSize={{ base: "28px", lg: "48px" }} px="5vw" my="-5vw">
-        Tracks
-      </Heading>
-      <Flex className={styles.tracksChallenges}>
+      <VStack
+        className={styles.tracksStack}
+        spacing="1vw"
+      >
+        <HStack spacing="2vw" alignItems="center">
+          <Image
+            className={styles.star_blue}
+            src="/svg/tracks/star_blue.svg"
+            alt="star"
+          />
+          <Heading className={styles.title}>TRACKS</Heading>
+          <Image
+            className={styles.star_blue}
+            src="/svg/tracks/star_blue.svg"
+            alt="star"
+          />
+        </HStack>
+        <Text fontSize="0.3em">Click on each track to learn more!</Text>
+        {trackClicked == Tracks.NONE &&
+        <Text className={styles.description}>
+          Shape the future at the 🎪 Circus of Inventions from <b>September 27th</b> to <b>September 29th!</b> 🎡 
+          The 11th edition of our flagship hackathon brings you a transformed carnival of creativity for all innovators, builders, and visionaries. 
+          <br /><br />
+          Each year, HackGT welcomes over 1500+ hackers 🤹 from around the world to tackle novel challenges, win exciting prizes, and make lasting connections 🎠! 
+          HackGT's stage will be open to everyone, regardless of background, experience, or skill level, to showcase their innovative ideas. 🎢 
+          Hackers can expect a thrilling weekend filled with networking opportunities, top-tier prizes, engaging mini-events, and lots of swag! 🏆        </Text>}
+        {trackClicked == Tracks.EMERGING &&
+        <Text className={styles.description}>
+          emerging track desc
+        </Text>}
+        {trackClicked == Tracks.GENERAL &&
+        <Text className={styles.description}>
+          general track desc
+        </Text>}
+      </VStack>
+      <Image
+        className={styles.middle_path}
+        src="/svg/tracks/middle_path.svg"
+        alt="path"
+      />
+      <Image
+        className={styles.beardell_hoop}
+        src="/svg/tracks/beardell_hoop.svg"
+        alt="beardell hulahooping"
+      />
+      {/* <Flex className={styles.tracksChallenges}>
         <Text width="50%" textAlign="center" alignContent="center">Coming Soon!</Text>
-      </Flex>
+      </Flex> */}
     </Box>
   );
 };
