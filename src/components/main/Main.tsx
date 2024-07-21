@@ -40,9 +40,24 @@ const Main = () => {
         alt="main tent"
       />
       <Image
+        className={styles.popcorn_stand}
+        src="/svg/home/popcorn_stand.svg"
+        alt="popcorn stand"
+      />
+      <Image
         className={styles.candy_stand}
         src="/svg/home/candy_stand.svg"
         alt="candy stand"
+      />
+      <Image
+        className={styles.grass_h1}
+        src="/svg/about/grass2.svg"
+        alt="grass"
+      />
+      <Image
+        className={styles.grass_h2}
+        src="/svg/about/grass2.svg"
+        alt="grass"
       />
     </Box>
   );

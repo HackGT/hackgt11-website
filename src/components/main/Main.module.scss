@@ -48,14 +48,15 @@
     max-width: 300px;
     top: 22%;
     left: 5%;
+    z-index: 3;
   }
 
   .ferris_wheel {
     position: absolute;
     width: 30%;
-    max-width: 500px;
+    // max-width: 500px;
     right: 5%;
-    bottom: 23%;
+    bottom: 22%;
   }
 
   .firework {
@@ -85,11 +86,34 @@
     z-index: 3;
   }
 
+  .popcorn_stand {
+    position: absolute;
+    right: 31.5%;
+    bottom: 15%;
+    width: 12%;
+  }
+
   .candy_stand {
     position: absolute;
     right: 0%;
     bottom: 9%;
     width: 15%;
+  }
+
+  .grass_h1, .grass_h2 {
+    position: absolute;
+    width: 2%;
+    z-index: 5;
+  }
+
+  .grass_h1 {
+    left: 20%;
+    bottom: 3.75%;
+  }
+
+  .grass_h2 {
+    left: 42%;
+    bottom: 3.75%;
   }
 }
 
@@ -107,6 +131,10 @@
   //   padding: 0;
   // }
 
+  .popcorn_stand {
+    right: 31.5%;
+    bottom: 15%;
+  }
 }
 
 @media (max-width: 800px) {

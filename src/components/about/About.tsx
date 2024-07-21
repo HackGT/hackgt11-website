@@ -18,7 +18,6 @@ const About = () => {
   return (
     <Box
       className={styles.about}
-      // display="flex"
       border="solid purple">
       {/* <Image
         className={styles.main_tent}
@@ -65,21 +64,62 @@ const About = () => {
         src="/svg/about/top_path.svg"
         alt="path"
       />
-      <VStack className={styles.aboutStack}>
-          <Heading className={styles.title}>ABOUT</Heading>
+      <Box display="grid" className={styles.about_background}>
+        <Image
+          // className={styles.about_background}
+          src="/svg/about/about_background.svg"
+          alt="about"
+          gridArea="1 / 1"
+          width="100%"
+        />
+        <Image
+          // className={styles.about_outline}
+          src="/svg/about/about_outline.svg"
+          alt="about"
+          gridArea="1 / 1"
+          width="95%"
+        />
+        <VStack 
+          gridArea="1 / 1"
+          className={styles.aboutStack}
+          spacing={{ base: "1vw", lg: "2vw" }}>
+          <HStack spacing="2vw" alignItems="center">
+            <Image
+              className={styles.star}
+              src="/svg/about/star.svg"
+              alt="star"
+            />
+            <Heading className={styles.title}>ABOUT</Heading>
+            <Image
+              className={styles.star}
+              src="/svg/about/star.svg"
+              alt="star"
+            />
+          </HStack>
           <Text className={styles.description}>
-          Shape the future at the 🎪 Circus of Inventions from September __ to September __! 🎡 
-          The 11th edition of our flagship hackathon brings you a transformed carnival of creativity for all innovators, builders, and visionaries.
+          Shape the future at the 🎪 Circus of Inventions from <b>September 27th</b> to <b>September 29th!</b> 🎡 
+          The 11th edition of our flagship hackathon brings you a transformed carnival of creativity for all innovators, builders, and visionaries. 
           <br /><br />
           Each year, HackGT welcomes over 1500+ hackers 🤹 from around the world to tackle novel challenges, win exciting prizes, and make lasting connections 🎠! 
           HackGT's stage will be open to everyone, regardless of background, experience, or skill level, to showcase their innovative ideas. 🎢 
-          Hackers can expect a thrilling weekend filled with networking opportunities, top-tier prizes, engaging mini-events, and lots of swag!  🏆
+          Hackers can expect a thrilling weekend filled with networking opportunities, top-tier prizes, engaging mini-events, and lots of swag! 🏆
           </Text>
-      </VStack>
-      <Image
+        </VStack>
+      </Box>
+      {/* <Image
         className={styles.beardell_hat}
         src="/svg/about/beardell_hat.svg"
         alt="beardell in a hat"
+      /> */}
+      <Image
+        className={styles.beardell_balloon}
+        src="/svg/about/beardell_balloon.svg"
+        alt="beardell with a balloon"
+      />
+      <Image
+        className={styles.grass5}
+        src="/svg/about/grass2.svg"
+        alt="grass"
       />
     </Box>
   );
