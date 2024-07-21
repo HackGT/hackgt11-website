@@ -1,12 +1,90 @@
 @import "../styles/variables.scss";
 
-@media only screen and (min-width: 1441px) {
-  .container {
-    width: 100% !important;
-    zoom: 1.33 !important;
-  }
+// @media only screen and (min-width: 1441px) {
+//   .container {
+//     width: 100% !important;
+//     zoom: 1.33 !important;
+//   }
+// }
+
+.schedule {
+  position: relative;
+  width: 100%;
+  height: 100vw;
+  z-index: 3;
+  border: solid orange;
 }
 
+.schedule_board {
+  position: absolute;
+  top: 13%;
+  left: 17%;
+  width: 60%;
+}
+
+// .schedule_decor {
+//   position: absolute;
+//   top: 13%;
+//   left: 17%;
+//   width: 60%;
+// }
+
+.grass_s1, .grass_s3, .grass_s4 {
+  position: absolute;
+  width: 2%;
+  z-index: 5;
+}
+
+.grass_s1 {
+  top: 3%;
+  right: 15%;
+}
+
+// .grass_s2 {
+//   top: 54.5%;
+//   right: 36%;
+// }
+
+.grass_s3 {
+  right: 28%;
+  bottom: 27.5%;
+}
+
+.grass_s4 {
+  left: 30%;
+  bottom: 12%;
+}
+
+.merry_go_round {
+  position: absolute;
+  left: 0%;
+  bottom: 12%;
+  width: 35%;
+}
+
+.beardell_bike {
+  position: absolute;
+  right: 13%;
+  bottom: 21%;
+  width: 13%;
+}
+
+@media only screen and (max-width: 1441px)  {
+  .beardell_bike {
+    right: 17%;
+    bottom: 15%;
+  }
+
+  .grass_s1 {
+    top: 7%;
+    right: 10%;
+  }
+
+  .grass_s3 {
+    right: 32%;
+    bottom: 22%;
+  }
+}
 
 // .container {
 //   padding-top: 8vh;

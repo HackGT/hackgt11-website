@@ -45,6 +45,16 @@ const TracksChallenges = () => {
   return (
     <Box border="solid blue" className={styles.tracksChallenges}>
       <Image
+        className={styles.grass_t1}
+        src="/svg/about/grass1.svg"
+        alt="grass"
+      />
+      <Image
+        className={styles.grass_t2}
+        src="/svg/about/grass2.svg"
+        alt="grass"
+      />
+      <Image
         className={styles.emerging_tent}
         src="/svg/tracks/emerging_tent.svg"
         alt="emerging"
@@ -74,14 +84,6 @@ const TracksChallenges = () => {
           />
         </HStack>
         <Text fontSize="0.3em">Click on each track to learn more!</Text>
-        {trackClicked == Tracks.NONE &&
-        <Text className={styles.description}>
-          Shape the future at the 🎪 Circus of Inventions from <b>September 27th</b> to <b>September 29th!</b> 🎡 
-          The 11th edition of our flagship hackathon brings you a transformed carnival of creativity for all innovators, builders, and visionaries. 
-          <br /><br />
-          Each year, HackGT welcomes over 1500+ hackers 🤹 from around the world to tackle novel challenges, win exciting prizes, and make lasting connections 🎠! 
-          HackGT's stage will be open to everyone, regardless of background, experience, or skill level, to showcase their innovative ideas. 🎢 
-          Hackers can expect a thrilling weekend filled with networking opportunities, top-tier prizes, engaging mini-events, and lots of swag! 🏆        </Text>}
         {trackClicked == Tracks.EMERGING &&
         <Text className={styles.description}>
           emerging track desc
