@@ -13,16 +13,16 @@
 
 .emerging_tent {
   position: absolute;
-  width: 25%;
-  top: 16%;
-  left: 13%;
+  width: 20%;
+  top: 23%;
+  left: 20%;
 }
 
 .general_tent {
   position: absolute;
-  width: 25%;
-  top: 16%;
-  right: 23%
+  width: 20%;
+  top: 23%;
+  right: 30%
 }
 
 .tracksStack {
@@ -67,6 +67,7 @@
   position: absolute;
   right: 0%;
   top: 70%;
+  width: 80%;
 }
 
 .beardell_hoop {
@@ -76,13 +77,29 @@
   width: 24%;
 }
 
+.grass_t1, .grass_t2 {
+  position: absolute;
+  width: 2%;
+  z-index: 5;
+}
+
+.grass_t1 {
+  top: 5%;
+  right: 29%;
+}
+
+.grass_t2 {
+  top: 27%;
+  right: 17%;
+}
+
 @media only screen and (max-width: 1441px) {
   .tracksChallenges {
     zoom: 1 !important;
   }
 
   .emerging_tent, .general_tent {
-    top: 0%;
+    top: 10%;
   }
 
   .tracksStack {
@@ -98,6 +115,14 @@
   .beardell_hoop {
     bottom: 0%;
     right: 3%;
+  }
+
+  .grass_t1 {
+    top: -15%;
+  }
+  
+  .grass_t2 {
+    top: 14%;
   }
 }
 

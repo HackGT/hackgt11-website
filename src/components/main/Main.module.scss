@@ -33,6 +33,12 @@
     // align-content: center;
   }
 
+  .sky {
+    position: absolute;
+    top: -4%;
+    width: 100%;
+  }
+
   .title {
     position: absolute;
     width: 50%;
@@ -131,6 +137,10 @@
   //   padding: 0;
   // }
 
+  .sky {
+    top: -5.5vw;
+  }
+
   .popcorn_stand {
     right: 31.5%;
     bottom: 15%;
@@ -139,6 +149,10 @@
 
 @media (max-width: 800px) {
   .main {
+    .sky {
+      top: 0vw;
+    }
+
     .title {
       top: 15%;
     }

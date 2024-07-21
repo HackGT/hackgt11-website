@@ -5,6 +5,11 @@ const Main = () => {
   return (
     <Box border="solid magenta" className={styles.main}>
       <Image
+        className={styles.sky}
+        src="/svg/home/sky.svg"
+        alt="sky"
+      />
+      <Image
         className={styles.air_balloon}
         src="/svg/home/air_balloon.svg"
         alt="beardell on balloon"

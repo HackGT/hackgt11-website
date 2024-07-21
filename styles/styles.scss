@@ -12,14 +12,14 @@
 
 .circus_bg {
   height: 100%;
-  background-color: #BDDA8C;
+  background-image: linear-gradient(180deg, #BDDA8C 28.02%, #C7D37C 63.37%, #C5D890 81.05%, #B5DF8B 98.72%);;
   // background-image: url("../public/svg/global/circus-background.svg");
   // background-repeat: no-repeat;
   // background-position-y: 5vw;
   // background-position-x: center;
   // background-size: cover;
   
-  background-image: url("/svg/home/sky.svg");
+  // background-image: url("/svg/home/sky.svg");
   background-repeat: no-repeat;
   background-position-y: top;
   background-position-x: center;
