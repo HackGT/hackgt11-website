@@ -1,6 +1,5 @@
-import Image from "next/image";
 import styles from "./TracksChallenges.module.scss";
-import { Alert, AlertIcon, Box, VStack, Text, Heading, HStack, Flex, Spacer } from "@chakra-ui/react";
+import { Alert, AlertIcon, Box, VStack, Text, Heading, HStack, Flex, Spacer, Image } from "@chakra-ui/react";
 import { tracks } from "./tracks.json";
 
 interface trackCardProps {
@@ -36,43 +35,24 @@ const TrackCard = (props: trackCardProps) => {
 const TracksChallenges = () => {
   //Currently, this section has 3 columns with the middle column having the sustain track from hackgtX
   return (
-    <>
+    <Box border="solid blue" className={styles.tracksChallenges}>
+      <Image
+        className={styles.emerging_tent}
+        src="/svg/tracks/emerging_tent.svg"
+        alt="emerging"
+      />
+      <Image
+        className={styles.general_tent}
+        src="/svg/tracks/general_tent.svg"
+        alt="general"
+      />
       <Heading fontSize={{ base: "28px", lg: "48px" }} px="5vw" my="-5vw">
-        Tracks and Challenges
+        Tracks
       </Heading>
       <Flex className={styles.tracksChallenges}>
         <Text width="50%" textAlign="center" alignContent="center">Coming Soon!</Text>
-        {/* <Image
-          height="270px"
-          width="180px"
-          src={"/img/tracks/sign-post-1.png"}
-          alt="sign post"
-        /> */}
       </Flex>
-      {/* <Spacer height="40vw"/> */}
-      {/* <VStack ml="5vw" alignItems="start">
-        <Image
-          height="200vw"
-          width="400vw"
-          src={"/img/snack-bear-grp.png"}
-          alt="snack bear"
-        />
-        <Box alignSelf="end">
-          <Image
-            height="500vw"
-            width="240vw"
-            src={"/img/merry-go-round.png"}
-            alt="merry go round"
-          />
-        </Box>
-        <Image
-            height="270px"
-            width="180px"
-            src={"/img/sign-post-2.png"}
-            alt="sign post"
-          />
-      </VStack> */}
-    </>
+    </Box>
   );
 };
 

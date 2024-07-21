@@ -36,18 +36,6 @@
   height: auto;
 }
 
-.ellipse {
-  z-index: 9;
-  width: 9vw;
-  height: 3vw;
-  transform: rotate(7.059deg);
-  border-radius: 50%;
-}
-
-.ellipseText {
-  transform: rotate(-7.059deg) !important;
-}
-
 .menu {
   visibility: hidden;
 }

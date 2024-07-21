@@ -3,14 +3,47 @@ import styles from "./Main.module.scss";
 
 const Main = () => {
   return (
-    <Box className={styles.main}>
-      <Center>
-        {/* <Image
-          className={styles.image}
-          src="/img/global/HackGT11.png"
-          alt="HackGT 11"
-        /> */}
-      </Center>
+    <Box border="solid magenta" className={styles.main}>
+      <Image
+        className={styles.air_balloon}
+        src="/svg/home/air_balloon.svg"
+        alt="beardell on balloon"
+      />
+      <Image
+        className={styles.clouds}
+        src="/svg/home/clouds.svg"
+        alt="clouds"
+      />
+      <Image
+        className={styles.title}
+        src="/svg/home/title.svg"
+        alt="HackGT 11"
+      />
+      <Image
+        className={styles.firework}
+        src="/svg/home/firework.svg"
+        alt="fireworks"
+      />
+      <Image
+        className={styles.ferris_wheel}
+        src="/svg/home/ferris_wheel.svg"
+        alt="beardell on ferris"
+      />
+      <Image
+        className={styles.ticket_booth}
+        src="/svg/home/ticket_booth.svg"
+        alt="ticket booth"
+      />
+      <Image
+        className={styles.main_tent}
+        src="/svg/home/main_tent.svg"
+        alt="main tent"
+      />
+      <Image
+        className={styles.candy_stand}
+        src="/svg/home/candy_stand.svg"
+        alt="candy stand"
+      />
     </Box>
   );
 };

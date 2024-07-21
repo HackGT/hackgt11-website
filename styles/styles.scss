@@ -6,11 +6,22 @@
   // background-color: #C2EAF3
 }
 
+// body, html {
+//   height: 100%;
+// }
+
 .circus_bg {
-  background-color: #FFF4BD;
-  background-image: url("../public/svg/global/circus-background.svg");
+  height: 100%;
+  background-color: #BDDA8C;
+  // background-image: url("../public/svg/global/circus-background.svg");
+  // background-repeat: no-repeat;
+  // background-position-y: 5vw;
+  // background-position-x: center;
+  // background-size: cover;
+  
+  background-image: url("/svg/home/sky.svg");
   background-repeat: no-repeat;
-  background-position-y: 5vw;
+  background-position-y: top;
   background-position-x: center;
-  background-size: cover;
+  background-size: contain;
 }
