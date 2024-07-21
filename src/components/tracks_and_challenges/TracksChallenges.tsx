@@ -86,11 +86,19 @@ const TracksChallenges = () => {
         <Text fontSize="0.3em">Click on each track to learn more!</Text>
         {trackClicked == Tracks.EMERGING &&
         <Text className={styles.description}>
-          emerging track desc
+          Feeling like a newbie to hackathons and uncertain on how to get a technology project up and running?
+          The Emerging Hacker Track is here to provide you with walkthruoghs on introductory tech and tips on how to become 
+          a pro at a hackathon. We offer a wide variety of workshops to explore and learn about various topics in computing.
+          We will also have on-demand mentor office hours so you get the help you need to complete your very first hackathon 
+          project.
         </Text>}
         {trackClicked == Tracks.GENERAL &&
         <Text className={styles.description}>
-          general track desc
+          Already have experience and found your groove at building technology projects? The General Track gives the 
+          conventional hacker experience with full creative control and exciting supplementary resources as needed. 
+          This track is your opportunity to innovate and connect with others as you bring your ideas to life. 
+          We'll bring engaging industry professionals, provide new technologies, and award impactful prizes to 
+          help you with your project.
         </Text>}
       </VStack>
       <Image
