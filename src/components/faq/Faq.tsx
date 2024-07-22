@@ -43,6 +43,15 @@ const Faq = () => {
           )
         )}
       </VStack>
+      <VStack className={styles.registration} spacing="2vw">
+        <Heading className={styles.reg_title}>REGISTRATION</Heading>
+        <Text>This year, we will have 2 rounds of applications: <b>early bird</b> and <b>regular admission</b>. 
+          Both groups of applicants will get results at the same time before the hackathon, but early bird 
+          applications will get a higher chance of securing a spot! Early Bird ends <b>September 1st 11:59 pm</b> and 
+          right after this period, regular applications will be taken until <b>September 8th 11:59pm</b>.
+        </Text>
+        <Text fontWeight="bold" bgColor="rgba(181,59,39, 0.75)" padding="1vw" borderRadius="30px"><a href="https://registration.hexlabs.org/">Register NOW here!</a></Text>
+      </VStack>
     </div>
   );
 };
