@@ -19,7 +19,7 @@ const QA = (qap: QAProps) => {
         onClick={() => {
           setQuestionClicked(!questionClicked);
         }}
-        className={`${styles.clickable} ${questionClicked ? 'open' : ''}`}
+        // className={`${styles.clickable} ${questionClicked ? 'open' : ''}`}
       >
         <Question open={questionClicked} question={qap.question} />
       </Box>

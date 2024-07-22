@@ -3,7 +3,7 @@ import styles from "./Main.module.scss";
 
 const Main = () => {
   return (
-    <Box border="solid magenta" className={styles.main}>
+    <Box className={styles.main}>
       <Image
         className={styles.sky}
         src="/svg/home/sky.svg"
@@ -14,13 +14,13 @@ const Main = () => {
         src="/svg/home/air_balloon.svg"
         alt="beardell on balloon"
       />
-      <Box className={styles['clouds-container']}>
+      {/* <Box className={styles['clouds-container']}> */}
         <Image
           className={styles.clouds}
           src="/svg/home/clouds.svg"
           alt="clouds"
         />
-        <Image
+        {/* <Image
           className={`${styles.clouds} ${styles.reversed}`}
           src="/svg/home/clouds.svg"
           alt="reversed clouds"
@@ -44,8 +44,8 @@ const Main = () => {
           className={`${styles.clouds} ${styles.reversed}`}
           src="/svg/home/clouds.svg"
           alt="reversed clouds"
-        />
-      </Box>
+        /> */}
+      {/* </Box> */}
       <Image
         className={styles.title}
         src="/svg/home/title.svg"

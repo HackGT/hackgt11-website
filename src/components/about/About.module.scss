@@ -6,13 +6,6 @@
   position: relative;
 }
 
-// .main_tent {
-//   position: absolute;
-//   top: -50%;
-//   left: 10%;
-//   width: 45%;
-// }
-
 .beardell_bench {
   position: absolute;
   top: -19%;
@@ -69,13 +62,6 @@
   width: 95%;
 }
 
-.beardell_hat {
-  position: absolute;
-  right: 0%;
-  bottom: 0%;
-  width: 15%;
-}
-
 .beardell_balloon {
   position: absolute;
   left: 14%;
@@ -101,21 +87,11 @@
 }
 
 .aboutStack {
-  // display: flex;
-  // justify-content: flex-end;
   position: absolute;
-  // width: 40%;
-  // height: 75%;
-  // top: 23%;
-  // right: 4%;
   margin: 6%;
   margin-top: 4%;
 
   color: $white;
-
-  // background-image: url("/svg/about/about_background.svg");
-  // background-repeat: no-repeat;
-  // background-size: contain;
 }
 
 .title {
@@ -133,8 +109,6 @@
   font-style: normal;
   font-weight: 500;
 }
-
-// textAlign="center" width="100%" pr="2vw" lineHeight="2"
 
 @media only screen and (max-width: 1441px) {
   .about {

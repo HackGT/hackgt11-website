@@ -5,14 +5,59 @@
 //   padding-bottom: 20rem;
 // }
 
-@media only screen and (min-width: 1441px) {
-  .footer_container {
-    width: 100% !important;
-    zoom: 1.33 !important;
+.footer_content {
+  font-family: "Montserrat";
+  padding-bottom: 5rem;
+  padding-top: 10rem;
+  color: white;
+}
+
+.stay_connected {
+  font-family: "Horse Saguaro" !important;
+  font-weight: normal !important;
+  letter-spacing: 0.25vw;
+  font-size: 3vw !important;
+}
+
+.star_pink {
+  width: 3vw !important;
+}
+
+.beardell_hat {
+  position: absolute;
+  left: 30%;
+  bottom: 0.25%;
+  width: 7%;
+}
+
+@media only screen and (max-width: 1441px) {
+  .stay_connected {
+    font-size: 3vw !important;
+  }
+
+  .star_pink {
+    width: 7vw;
+  }
+
+  .beardell_hat {
+    left: 25%;
+    bottom: 0.5%;
+    width: 10%;
   }
 }
 
-.footer_content {
-  font-family: "Comic Sans MS";
-  padding-bottom: 5rem;
+@media only screen and (max-width: 800px) {
+  .stay_connected {
+    font-size: 5vw !important;
+  }
+
+  .star_pink {
+    width: 7vw;
+  }
+
+  .beardell_hat {
+    left: 10%;
+    bottom: 1%;
+    width: 15%;
+  }
 }

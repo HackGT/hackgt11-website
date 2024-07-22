@@ -10,16 +10,16 @@ const Faq = () => {
   return (
     <div className={styles.container}>
       <Center>
-      <HStack spacing="2vw" alignItems="center">
+        <HStack spacing="2vw" alignItems="center" marginY="5%">
           <Image
-            className={styles.star_blue}
-            src="/svg/faq/star.svg"
+            className={styles.star_plum}
+            src="/svg/faq/star_plum.svg"
             alt="star"
           />
           <Heading className={styles.title}>FAQ</Heading>
           <Image
-            className={styles.star_blue}
-            src="/svg/faq/star.svg"
+            className={styles.star_plum}
+            src="/svg/faq/star_plum.svg"
             alt="star"
           />
         </HStack>

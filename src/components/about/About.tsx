@@ -16,14 +16,7 @@ import styles from "./About.module.scss";
 
 const About = () => {
   return (
-    <Box
-      className={styles.about}
-      border="solid purple">
-      {/* <Image
-        className={styles.main_tent}
-        src="/svg/home/main_tent.svg"
-        alt="main tent"
-      /> */}
+    <Box className={styles.about}>
       <Image
         className={styles.beardell_bench}
         src="/svg/about/beardell_bench.svg"
@@ -66,14 +59,12 @@ const About = () => {
       />
       <Box display="grid" className={styles.about_background}>
         <Image
-          // className={styles.about_background}
           src="/svg/about/about_background.svg"
           alt="about"
           gridArea="1 / 1"
           width="100%"
         />
         <Image
-          // className={styles.about_outline}
           src="/svg/about/about_outline.svg"
           alt="about"
           gridArea="1 / 1"
@@ -106,11 +97,6 @@ const About = () => {
           </Text>
         </VStack>
       </Box>
-      {/* <Image
-        className={styles.beardell_hat}
-        src="/svg/about/beardell_hat.svg"
-        alt="beardell in a hat"
-      /> */}
       <Image
         className={styles.beardell_balloon}
         src="/svg/about/beardell_balloon.svg"

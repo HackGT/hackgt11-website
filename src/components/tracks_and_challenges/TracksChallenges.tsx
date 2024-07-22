@@ -43,7 +43,7 @@ const TracksChallenges = () => {
   const [trackClicked, setTrackClicked] = useState(Tracks.NONE);
 
   return (
-    <Box border="solid blue" className={styles.tracksChallenges}>
+    <Box className={styles.tracksChallenges}>
       <Image
         className={styles.grass_t1}
         src="/svg/about/grass1.svg"

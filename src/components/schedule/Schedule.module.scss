@@ -1,18 +1,10 @@
 @import "../styles/variables.scss";
 
-// @media only screen and (min-width: 1441px) {
-//   .container {
-//     width: 100% !important;
-//     zoom: 1.33 !important;
-//   }
-// }
-
 .schedule {
   position: relative;
   width: 100%;
   height: 100vw;
   z-index: 3;
-  border: solid orange;
 }
 
 .schedule_board {
@@ -90,125 +82,4 @@
 //   padding-top: 8vh;
 //   padding-bottom: 8vh;
 //   position: relative;
-// }
-
-// .comingSoon {
-//   font-size: $tMobile;
-//   text-align: center;
-//   padding-top: 10vh;
-//   padding-bottom: 20vh;
-//   z-index: 3;
-// }
-
-// .comingSoonTitle {
-//   font-size: $h1;
-//   font-family: "Titillium Web";
-//   color: whitesmoke;
-//   padding-top: $p1;
-//   padding-bottom: $p1;
-//   z-index: 3;
-// }
-
-// .title {
-//   color: #000000;
-//   font-size: $header;
-//   font-family: "Scrapbook";
-//   font-style: normal;
-//   z-index: 2;
-// }
-// .subtext {
-//   color: #000000;
-// }
-
-// .progressBar {
-//   min-width: 70vw;
-//   max-width: 80vw;
-//   text-align: center;
-//   box-shadow: 0px 4px 10px 4px rgba(255, 255, 255, 0.2), 0px -4px 10px 3px rgba(255, 255, 255, 0.2),
-//     1px 4px 10px rgba(255, 255, 255, 0.2);
-//   border-radius: 25px;
-//   z-index: 3;
-// }
-
-// .event_row {
-//   color: white;
-//   padding-top: 7px;
-//   font-family: "Titillium Web";
-//   padding-bottom: 7px;
-//   text-align: left !important;
-//   font-size: $p * 0.9;
-// }
-
-// .day_header {
-//   color: white;
-//   font-size: $h1;
-//   padding-bottom: 20px;
-//   font-family: "Titillium Web";
-// }
-
-// .event_time {
-//   font-weight: bold;
-// }
-
-// .daySection {
-//   .header {
-//     text-align: center;
-//     font-size: $subtMobile;
-//     padding-bottom: $p1;
-//   }
-
-//   .row {
-//     padding-left: $p2;
-//     padding-right: $p2;
-//     padding-top: $p1/2;
-//     padding-bottom: $p1/2;
-//     font-size: $p;
-//   }
-// }
-
-// @media (max-width: 600px) {
-//   .title {
-//     font-size: $headerMobile;
-//   }
-//   .comingSoonTitle {
-//     font-size: $subHeaderMobile;
-//   }
-//   .day_header {
-//     font-size: $subHeaderMobile * 1.2;
-//   }
-// }
-
-// @keyframes starryMotion {
-//   0% {
-//     transform: translateX(0) translateY(0);
-//   }
-//   25% {
-//     transform: translateX(10%);
-//   }
-//   50% {
-//     transform: translateY(10%);
-//   }
-//   75% {
-//     transform: translateX(10%) translateY(10%);
-//   }
-//   100% {
-//     transform: translateX(0) translateY(0);
-//   }
-// }
-// @keyframes starryMotion2 {
-//   0% {
-//     transform: translateX(0) translateY(0);
-//   }
-//   25% {
-//     transform: translateY(10%);
-//   }
-//   50% {
-//     transform: translateX(10%);
-//   }
-//   75% {
-//     transform: translateX(10%) translateY(10%);
-//   }
-//   100% {
-//     transform: translateX(0) translateY(0);
-//   }
 // }
