@@ -10,6 +10,8 @@
   margin-right: 3%;
 
   font-size: 3.5vw;
+  color: white;
+  font-family: "Montserrat";
 
   .clickable {
     background-color: rgba(178, 226, 216, 0.9);
@@ -75,6 +77,19 @@
   font-weight: normal !important;
   font-size: 1em !important;
   color: white;
+}
+
+.registration {
+  margin-top: 5vw;
+  font-size: medium;
+  width: 70%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  .reg_title {
+    font-family: "Horse Saguaro" !important;
+    font-weight: normal !important;
+  }
 }
 
 @media (max-width: 480px) {
