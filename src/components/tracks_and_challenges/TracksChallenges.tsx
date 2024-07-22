@@ -87,7 +87,7 @@ const TracksChallenges = () => {
         {trackClicked == Tracks.EMERGING &&
         <Text className={styles.description}>
           Feeling like a newbie to hackathons and uncertain on how to get a technology project up and running?
-          The Emerging Hacker Track is here to provide you with walkthruoghs on introductory tech and tips on how to become 
+          The Emerging Hacker Track is here to provide you with walkthroughs on introductory tech and tips on how to become 
           a pro at a hackathon. We offer a wide variety of workshops to explore and learn about various topics in computing.
           We will also have on-demand mentor office hours so you get the help you need to complete your very first hackathon 
           project.
