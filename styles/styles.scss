@@ -12,7 +12,15 @@
 
 .circus_bg {
   height: 100%;
-  background-image: linear-gradient(180deg, #BDDA8C 28.02%, #C7D37C 63.37%, #C5D890 81.05%, #B5DF8B 98.72%);;
+  background-image: linear-gradient(
+    180deg, 
+    #eeedbd 0%,  /* Black bar at the top */
+    #eeedbd 0%,  /* Adjust this percentage to change the height of the black bar */
+    #BDDA8C 28.02%, 
+    #C7D37C 63.37%, 
+    #C5D890 81.05%, 
+    #B5DF8B 98.72%
+  );
   // background-image: url("../public/svg/global/circus-background.svg");
   // background-repeat: no-repeat;
   // background-position-y: 5vw;
