@@ -14,17 +14,7 @@ const Main = () => {
         src="/svg/home/air_balloon.svg"
         alt="beardell on balloon"
       />
-      {/* <Box className={styles['clouds-container']}> */}
-        <Image
-          className={styles.clouds}
-          src="/svg/home/clouds.svg"
-          alt="clouds"
-        />
-        {/* <Image
-          className={`${styles.clouds} ${styles.reversed}`}
-          src="/svg/home/clouds.svg"
-          alt="reversed clouds"
-        />
+      <Box className={styles['clouds-container']}>
         <Image
           className={styles.clouds}
           src="/svg/home/clouds.svg"
@@ -44,8 +34,18 @@ const Main = () => {
           className={`${styles.clouds} ${styles.reversed}`}
           src="/svg/home/clouds.svg"
           alt="reversed clouds"
-        /> */}
-      {/* </Box> */}
+        />
+        <Image
+          className={styles.clouds}
+          src="/svg/home/clouds.svg"
+          alt="clouds"
+        />
+        <Image
+          className={`${styles.clouds} ${styles.reversed}`}
+          src="/svg/home/clouds.svg"
+          alt="reversed clouds"
+        />
+      </Box>
       <Image
         className={styles.title}
         src="/svg/home/title.svg"
@@ -94,5 +94,4 @@ const Main = () => {
     </Box>
   );
 };
-
 export default Main;
