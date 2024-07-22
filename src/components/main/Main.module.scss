@@ -3,34 +3,56 @@
 .register_now:hover {
   animation: scale 1000ms ease-in-out;
 }
+
 @keyframes scale {
   to {
     transform: scale(1.2);
   }
 }
 
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes moveClouds {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.air_balloon {
+  animation: float 3s ease-in-out infinite;
+}
+
+.clouds-container {
+  position: absolute;
+  top: 16%;
+  width: 200%;
+  display: flex;
+  animation: moveClouds 80s linear infinite;
+}
+
+.clouds {
+  width: 50%;
+}
+
+.clouds.reversed {
+  transform: scaleX(-1);
+}
+
 @media only screen {
   .main {
     width: 100%;
-    // height: 130vh;
     height: 75vw;
-    // max-height: 100vw;
-    // zoom: 2;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    
-    // background-image: url("/svg/home/sky.svg");
-    // background-repeat: no-repeat;
-    // background-position-y: top;
-    // background-position-x: center;
-    // background-size: contain;
-
-    // position: absolute;
-    // top: -100px;
-
     position: relative;
-    // align-content: center;
   }
 
   .sky {
@@ -55,12 +77,12 @@
     top: 22%;
     left: 5%;
     z-index: 3;
+    animation: float 3s ease-in-out infinite;
   }
 
   .ferris_wheel {
     position: absolute;
     width: 30%;
-    // max-width: 500px;
     right: 5%;
     bottom: 22%;
   }
@@ -72,10 +94,20 @@
     bottom: 36%;
   }
 
-  .clouds {
+  .clouds-container {
     position: absolute;
     top: 16%;
-    width: 95%;
+    width: 200%;
+    display: flex;
+    animation: moveClouds 80s linear infinite;
+  }
+
+  .clouds {
+    width: 50%;
+  }
+
+  .clouds.reversed {
+    transform: scaleX(-1);
   }
 
   .ticket_booth {
@@ -124,19 +156,6 @@
 }
 
 @media only screen and (max-width: 1441px) {
-  // .title {
-  //   top: 15%;
-  // }
-
-  // .air_balloon {
-  //   top: 20%;
-  // }
-
-  // .ferris_wheel {
-  //   top: 25%;
-  //   padding: 0;
-  // }
-
   .sky {
     top: -5.5vw;
   }
@@ -168,6 +187,5 @@
     .candy_stand {
       width: 12%;
     }
-
   }
 }
