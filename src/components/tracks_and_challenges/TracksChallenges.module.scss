@@ -1,18 +1,117 @@
 @import "../styles/variables.scss";
 
 .tracksChallenges {
-  margin-left: 4%;
-  margin-right: 4%;
+  width: 100%;
+  height: 75vw;
+  position: relative;
+  font-size: 3vw;
+  zoom: 1.33 !important;
 }
 
-@media (max-width: 800px) {
+.emerging_tent {
+  position: absolute;
+  width: 20%;
+  top: 23%;
+  left: 20%;
+}
+
+.general_tent {
+  position: absolute;
+  width: 20%;
+  top: 23%;
+  right: 30%
+}
+
+.tracksStack {
+  position: absolute;
+  width: 60%;
+  top: 50%;
+  left: 7%;
+  margin: 6%;
+  margin-top: 4%;
+
+  color: $white;
+}
+
+.title {
+  font-family: "Horse Saguaro" !important;
+  font-weight: normal !important;
+  font-size: 1em !important;
+}
+
+.description {
+  text-align: center;
+  line-height: 1.75;
+  letter-spacing: 1px;
+  font-family: "Montserrat" !important;
+  font-size: 0.36em;
+  font-style: normal;
+  font-weight: 500;
+
+  border-radius: 25px;
+  background: rgba(140, 155, 114, 0.18);
+  padding: 1vw;
+}
+
+.middle_path {
+  position: absolute;
+  right: 0%;
+  top: 70%;
+  width: 80%;
+}
+
+.beardell_hoop {
+  position: absolute;
+  right: 4%;
+  bottom: 5%;
+  width: 24%;
+}
+
+.grass_t1, .grass_t2 {
+  position: absolute;
+  width: 2%;
+  z-index: 5;
+}
+
+.grass_t1 {
+  top: 5%;
+  right: 29%;
+}
+
+.grass_t2 {
+  top: 27%;
+  right: 17%;
+}
+
+@media only screen and (max-width: 1441px) {
   .tracksChallenges {
-    flex-wrap: wrap;
+    zoom: 1 !important;
   }
-}
 
-@media only screen and (min-width: 1441px) {
-  .tracksChallenges {
-    zoom: 1.33 !important;
+  .emerging_tent, .general_tent {
+    top: 10%;
+  }
+
+  .tracksStack {
+    width: 40%;
+    top: 45%;
+    left: 18%;
+  }
+
+  .star_blue {
+    width: 3vw;
+  }
+
+  .beardell_hoop {
+    bottom: 0%;
+    right: 3%;
+  }
+
+  .grass_t1 {
+    top: -15%;
+  }
+  
+  .grass_t2 {
+    top: 14%;
   }
 }

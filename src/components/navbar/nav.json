@@ -3,37 +3,37 @@
     {
       "name": "HOME",
       "id": "#home",
-      "color": "#E2CFC466"
+      "img": "/img/navbar/Home.png"
     },
     {
       "name": "ABOUT",
       "id": "#about",
-      "color": "#F7D9C466"
+      "img": "/img/navbar/About.png"
     },
     {
       "name": "TRACKS",
       "id": "#tracks_and_challenges",
-      "color": "#FBE3A4"
+      "img": "/img/navbar/Tracks.png"
     },
     {
       "name": "SCHEDULE",
       "id": "#schedule",
-      "color": "#C6DEF166"
+      "img": "/img/navbar/Schedule.png"
     },
     {
       "name": "FAQ",
       "id": "#faq",
-      "color": "#C9E4DE66"
+      "img": "/img/navbar/FAQ.png"
     },
     {
       "name": "SPONSORS",
       "id": "#sponsors",
-      "color": "#DBCDF066"
+      "img": "/img/navbar/Sponsors.png"
     },
     {
       "name": "APPLY",
       "id": "https://registration.hexlabs.org/",
-      "color": "#F2C6DE66"
+      "img": "/img/navbar/Apply.png"
     }
   ]
 }

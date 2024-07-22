@@ -11,24 +11,22 @@ import Navbar from "../src/components/navbar/Navbar";
 import Schedule from "../src/components/schedule/Schedule";
 import Footer from "../src/components/footer/Footer";
 
-const Home: NextPage = (props) => {
+const Home: NextPage = () => {
   return (
-    <div className="main">
+    <div className="circus_bg">
       <Head>
         <title>HackGT 11: Circus of Invention</title>
         <meta name="description" content="Circus of Invention" />
         <link
           rel="icon"
           type="image/png"
-          href="/icon/logo/hackgtx-512x512.png"
+          href="/icon/logo/hackgt11-512x512.png"
         />
       </Head>
       <Navbar anchors={links.components} />
 
-      <section id="home">
-        <Main toJump="#registration" />
-      </section>
-      <br />
+      <Main />
+
       <section id="about">
         <About />
       </section>

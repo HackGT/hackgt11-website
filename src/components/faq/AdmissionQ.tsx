@@ -15,7 +15,7 @@ const QA = () => {
         <HStack>
           <Text
             className={`${styles.question} ${styles.both}`}
-            fontFamily="Scrapbook">
+            fontFamily="Montserrat">
             How does the admissions process work?
           </Text>
           {questionClicked ? (

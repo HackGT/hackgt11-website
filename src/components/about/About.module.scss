@@ -1,15 +1,179 @@
 @import "../styles/variables.scss";
 
 .about {
-  margin-right: 3%;
+  width: 100%;
+  height: 50vw;
+  position: relative;
 }
 
-.aboutNotepad {
-  background: #6fc5b5;
-  border-radius: 25px;
-  padding-bottom: 3vh;
-  padding-top: 2vh;
-  opacity: 0.9;
+.beardell_bench {
+  position: absolute;
+  top: -19%;
+  right: 13%;
+  width: 22%;
+}
+
+.smiley_board {
+  position: absolute;
+  top: -6%;
+  right: 35%;
+  width: 10%;
+  z-index: 3;
+}
+
+.balloons {
+  position: absolute;
+  top: -34%;
+  right: 36.25%;
+  width: 10%;
+  z-index: 1;
+}
+
+.grass_a1, .grass_a2, .grass_a3, .grass_a4, .grass_a5 {
+  position: absolute;
+  width: 2%;
+  z-index: 5;
+}
+
+.grass_a1 {
+  top: 16%;
+  right: 36.75%;
+}
+
+.grass_a2 {
+  top: 13.5%;
+  right: 34%;
+}
+
+.grass_a3 {
+  top: 14.5%;
+  right: 14%;
+}
+
+.grass_a4 {
+  top: 10%;
+  right: 12%;
+}
+
+.top_path {
+  position: absolute;
+  top: -8%;
+  left: 5%;
+  width: 95%;
+}
+
+.beardell_balloon {
+  position: absolute;
+  left: 14%;
+  bottom: 5%;
+  width: 20%;
+}
+
+.grass_a5 {
+  left: 31%;
+  bottom: 7%;
+}
+
+.about_background {
+  position: absolute;
+  bottom: 3%;
+  right: 8%;
+  width: 40vw;
+  height: auto;
+  align-items: center;
+  justify-items: center;
+  padding: 0;
+  font-size: 3vw;
+}
+
+.aboutStack {
+  position: absolute;
+  margin: 6%;
+  margin-top: 4%;
+
+  color: $white;
+}
+
+.title {
+  font-family: "Horse Saguaro" !important;
+  font-weight: normal !important;
+  font-size: 1em !important;
+}
+
+.description {
+  text-align: center;
+  line-height: 1.75;
+  letter-spacing: 1px;
+  font-family: "Montserrat" !important;
+  font-size: 0.36em;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 1441px) {
+  .about {
+    width: 100% !important;
+    zoom: 1.33 !important;
+  }
+
+  .about_background {
+    right: 4%;
+    bottom: 23%;
+    width: 33vw;
+    font-size: 2.3vw;
+  }
+
+  .star_white {
+    width: 2.5vw;
+  }
+
+  .top_path {
+    top: -6%;
+  }
+
+  .beardell_bench {
+    top: -15%;
+    right: 13%;
+  }
+
+  .smiley_board {
+    top: -4.75%;
+  }
+
+  .balloons {
+    top: -25.75%;
+  }
+
+  .grass_a1 {
+    top: 11.5%;
+    right: 37%;
+  }
+  
+  .grass_a2 {
+    top: 9.5%;
+    right: 34%;
+  }
+  
+  .grass_a3 {
+    top: 10%;
+    right: 13.75%;
+  }
+  
+  .grass_a4 {
+    top: 7%;
+    right: 11.75%;
+  }
+
+  .beardell_balloon {
+    left: 14%;
+    bottom: 28%;
+    width: 20%;
+  }
+  
+  .grass_a5 {
+    left: 31%;
+    bottom: 30%;
+  }
 }
 
 @media (max-width: 800px) {
@@ -20,49 +184,14 @@
     align-items: center;
   }
 
-  .aboutEllipse {
-    display: none;
+  .top_path {
+    top: -6%;
   }
 
-  .laptop {
-    display: none;
-  }
-
-  .aboutBanner {
-    display: none;
-  }
-
-  .about {
-    .aboutStack {
-      width: 90%;
-    }
-
-    .aboutNotepad {
-      width: 90%;
-    }
-
-    .aboutNotepadText {
-      width: 90%;
-    }
-
-    .alert {
-      width: 90%;
-      word-wrap: break-word;
-    }
-
-    .registerNowText {
-      font-size: 11px;
-    }
-
-    .registrationGrid {
-      height: 100px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1441px) {
-  .about {
-    width: 100% !important;
-    zoom: 1.33 !important;
+  .about_background {
+    right: 4%;
+    bottom: 23%;
+    width: 33vw;
+    font-size: 2.2vw;
   }
 }

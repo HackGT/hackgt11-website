@@ -2,15 +2,15 @@
   "qas": [
     {
       "question": "What is HackGT?",
-      "answer": "HackGT is HexLabs' free, 36-hour, annual hackathon where students from across the world come together for a weekend in the fall to create innovative projects that show off their creativity and passion for development. You have the freedom to choose any platform, programming language, or format to show how you build solutions.\nParticipating in this event will widen your professional network, build your portfolio, and allow you to put your creativity into production! With tech talks and workshops, you will also have the opportunity to talk to and learn from professionals in various industries. We encourage everyone to be a part of our hacker community at HackGT X regardless of location, major, or prior hacking experience."
+      "answer": "HackGT is HexLabs' free, 36-hour, annual hackathon where students from across the world come together for a weekend in the fall to create innovative projects that show off their creativity and passion for development. You have the freedom to choose any platform, programming language, or format to show how you build solutions.\nParticipating in this event will widen your professional network, build your portfolio, and allow you to put your creativity into production! With tech talks and workshops, you will also have the opportunity to talk to and learn from professionals in various industries. We encourage everyone to be a part of our hacker community at HackGT 11 regardless of location, major, or prior hacking experience."
+    },
+    {
+      "question": "When does registration open?",
+      "answer": "Registration opens July 22nd! Keep an eye out on our socials and subscribe to our newsletter for more information, coming soon 👀"
     },
     {
       "question": "It's my first hackathon. Should I apply?",
       "answer": "Yes! Experience is not required. Hackathons are open creative and learning environments for everyone. If you are new to hackathons, the Emerging Hacker track may be for you!"
-    },
-    {
-      "question": "When does registration open?",
-      "answer": "Registration opens July 31st! Keep an eye out on our socials and subscribe to our newsletter for more information, coming soon 👀"
     },
     {
       "question": "Can I apply?",
@@ -18,7 +18,7 @@
     },
     {
       "question": "Did you say “FREE”?",
-      "answer": "YES! Once you're on GT's campus, HackGT X is completely free to participants and mentors thanks to our sponsors. Free food, free swag, free vibes. 😇 If you will be traveling from afar, we offer reimbursements to GT, but transportation will be your only cost otherwise."
+      "answer": "YES! Once you're on GT's campus, HackGT 11 is completely free to participants and mentors thanks to our sponsors. Free food, free swag, free vibes. 😇 If you will be traveling from afar, we offer reimbursements to GT, but transportation will be your only cost otherwise."
     },
     {
       "question": "specialQs",
@@ -30,7 +30,7 @@
     },
     {
       "question": "What projects can I make? ",
-      "answer": "You can make anything you want! If you want more direction, we will have sponsor challenges and HackGT X tracks for both Advanced and Emerging participants. However, you may not submit your past projects to HackGT. We will send out an event packet containing project submission rules closer to October."
+      "answer": "You can make anything you want! If you want more direction, we will have sponsor challenges and HackGT 11 tracks for both Advanced and Emerging participants. However, you may not submit your past projects to HackGT. We will send out an event packet containing project submission rules closer to September."
     },
     {
       "question": "I'm not a solo hacker. How can I make a team?",
@@ -38,7 +38,7 @@
     },
     {
       "question": "What are the prizes? Is there swag?",
-      "answer": "If you win a prize, we will make sure you get it no matter where in the world you are! We'll announce more info on prizes soon. HackGT X swag will be distributed during the event and there will be more opportunities to win exclusive items from winning activities or using points from event participation to redeem additional aesthetic swag. More information coming soon!"
+      "answer": "If you win a prize, we will make sure you get it no matter where in the world you are! We'll announce more info on prizes soon. HackGT 11 swag will be distributed during the event and there will be more opportunities to win exclusive items from winning activities or using points from event participation to redeem additional aesthetic swag. More information coming soon!"
     },
     {
       "question": "Who is eligible to mentor/volunteer?",

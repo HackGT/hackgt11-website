@@ -1,20 +1,24 @@
 .container {
   position: fixed;
-  top: 6vh;
+  top: 3vh;
   z-index: 100;
-  // width: 80vw;
   margin-right: 10vw;
   margin-left: 10vw;
 
-  .component {
-    font-size: 23px;
-    font-family: "Be Vietnam Pro";
-    font-weight: bold;
-    color: black;
+  .imageBackground {
+    font-size: 20px;
+    font-family: "Horse Saguaro";
+    color: #FFF4BF;
     z-index: 1000;
+
+    background-image: url('/img/navbar/ticket.png');
+    background-size: cover;
+    background-position: center;
+    width: 140px; /* Adjust as necessary */
+    height: 70px; /* Adjust as necessary */
   }
 
-  .component:hover {
+  .imageBackground:hover {
     text-decoration: underline;
   }
 }
@@ -27,17 +31,9 @@
   box-shadow: 10px 10px 100px 10px #331444;
 }
 
-.ellipse {
-  z-index: 9;
-  width: 9vw;
-  height: 3vw;
-  transform: rotate(7.059deg);
-  // flex-shrink: 0;
-  border-radius: 50%;
-}
-
-.ellipseText {
-  transform: rotate(-7.059deg) !important;
+.textImage {
+  width: 60%; /* Adjust as necessary */
+  height: auto;
 }
 
 .menu {
@@ -51,14 +47,17 @@
   height: auto;
   position: fixed;
   top: 0vh;
-  right: 10px;
+  right: -10px;
 }
 
 @media screen and (max-width: 1300px) {
   .container {
-    // left: 5vw;
-    .component {
-      font-size: 18px;
+    top: 2vh;
+    .imageBackground {
+      font-size: 15px;
+
+      width: 120px; /* Adjust as necessary */
+      height: 70px; /* Adjust as necessary */
     }
   }
 
@@ -70,10 +69,14 @@
 
 @media screen and (max-width: 1000px) {
   .container {
-    padding-right: 9vw;
-    padding-left: 2vw;
-    .component {
+    // padding-right: 9vw;
+    // padding-left: 2vw;
+    top: 2vh;
+    .imageBackground {
       font-size: 16px;
+
+      width: 105px; /* Adjust as necessary */
+      height: 70px; /* Adjust as necessary */
     }
   }
 }

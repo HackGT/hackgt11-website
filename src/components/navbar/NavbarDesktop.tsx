@@ -1,12 +1,11 @@
 import { Link, Center, Text } from "@chakra-ui/react";
-
 import styles from "./Navbar.module.scss";
 
 interface NavbarDesktopProps {
   name: string;
   key: null;
   anchorLink: string;
-  bgColor: string;
+  img: string;
 }
 
 const NavbarDesktop = (ncp: NavbarDesktopProps) => {
@@ -16,11 +15,11 @@ const NavbarDesktop = (ncp: NavbarDesktopProps) => {
         draggable="false"
         style={{ textDecoration: "none" }}
         href={ncp.anchorLink}
-        className={styles.component}
+        // className={styles.component}
       >
-          <Center bg={ncp.bgColor} >
-            <div className={styles.Text}>{ncp.name}</div>
-          </Center>
+        <Center className={styles.imageBackground}>
+          <Text>{ncp.name}</Text>
+        </Center>
       </Link>
     </div>
   );

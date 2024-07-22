@@ -2,7 +2,34 @@
 
 .main {
   position: relative;
-  background-size: 80px 80px !important;
-  background-image: linear-gradient(to right, grey .5px, transparent 0.25px),
-    linear-gradient(to bottom, grey .5px, transparent 0.25px) !important;
+  // background-size: 8px 80px !important;
+  // background-color: #C2EAF3
+}
+
+// body, html {
+//   height: 100%;
+// }
+
+.circus_bg {
+  height: 100%;
+  background-image: linear-gradient(
+    180deg, 
+    #eeedbd 0%,  /* Black bar at the top */
+    #eeedbd 0%,  /* Adjust this percentage to change the height of the black bar */
+    #BDDA8C 28.02%, 
+    #C7D37C 63.37%, 
+    #C5D890 81.05%, 
+    #B5DF8B 98.72%
+  );
+  // background-image: url("../public/svg/global/circus-background.svg");
+  // background-repeat: no-repeat;
+  // background-position-y: 5vw;
+  // background-position-x: center;
+  // background-size: cover;
+  
+  // background-image: url("/svg/home/sky.svg");
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: contain;
 }

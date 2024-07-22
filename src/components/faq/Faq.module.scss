@@ -3,25 +3,47 @@
 .container {
   color: black;
   padding-bottom: $p3/2;
-  padding-top: $p3/1.2;
+  // padding-top: $p3/1.2;
   position: relative;
 
   margin-left: 3%;
   margin-right: 3%;
 
+  font-size: 3.5vw;
+  color: white;
+  font-family: "Montserrat";
+
   .clickable {
-    background-color: #b2e2d8;
+    background-color: rgba(178, 226, 216, 0.9);
+    border-radius: 30px; /* Rounded corners all around */
+    padding: 10px; /* Add padding for better text spacing */
   }
 
+  // .clickable.open {
+  //   border-radius: 20px 20px 0 0; /* Rounded corners only on the top when open */
+  // }
+
   .answer {
-    border: 2px black solid;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.141); /* Adjust the opacity as needed */
+    color: white;
+    font-family: "Montserrat";
+    border-radius: 0 0 20px 20px; /* Rounded corners only on the bottom */
+    padding: 10px; /* Add padding for better text spacing */
+    margin: auto;
   }
 }
 
 .arrow {
   width: 30px;
   margin-right: 1% !important;
+}
+
+.star_plum {
+  width: 3vw;
+}
+
+.line {
+  height: 100%;
 }
 
 .link {
@@ -32,14 +54,42 @@
 .qa_shape {
   position: relative;
   z-index: 3;
+  overflow: hidden; /* Ensure child elements don't overflow rounded corners */
+  
   .clickable {
     cursor: pointer;
+    color: white;
+  }
+
+  .question {
+    font-family: "Montserrat";
+    font-weight: bold;
   }
 
   .both {
     width: $faq;
     text-align: left;
     padding: $p1/3 $p1/2 $p1/3 $p1/2;
+  }
+}
+
+.title {
+  font-family: "Horse Saguaro" !important;
+  font-weight: normal !important;
+  font-size: 1em !important;
+  color: white;
+}
+
+.registration {
+  margin-top: 5vw;
+  font-size: x-large;
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  .reg_title {
+    font-family: "Horse Saguaro" !important;
+    font-weight: normal !important;
   }
 }
 
@@ -52,6 +102,7 @@
   .qa_shape {
     .question {
       font-size: $pv2;
+      color: white;
     }
     .answer {
       font-size: $pv2/1.2;
