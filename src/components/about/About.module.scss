@@ -76,14 +76,14 @@
 
 .about_background {
   position: absolute;
-  bottom: 3%;
-  right: 8%;
-  width: 40vw;
+  bottom: -2%;
+  right: 4%;
+  width: 45vw;
   height: auto;
   align-items: center;
   justify-items: center;
   padding: 0;
-  font-size: 3vw;
+  font-size: 3.5vw;
 }
 
 .aboutStack {
@@ -189,9 +189,14 @@
   }
 
   .about_background {
-    right: 4%;
-    bottom: 23%;
-    width: 33vw;
-    font-size: 2.2vw;
+    right: 20%;
+    bottom: -7%;
+    width: 50vw;
+    font-size: 3.4vw;
+    z-index: 10;
+  }
+
+  .beardell_balloon {
+    visibility: hidden;
   }
 }

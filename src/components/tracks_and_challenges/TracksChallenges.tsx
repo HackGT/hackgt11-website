@@ -83,7 +83,7 @@ const TracksChallenges = () => {
             alt="star"
           />
         </HStack>
-        <Text fontSize="0.3em">Click on each track to learn more!</Text>
+        <Text fontSize="0.4em">Click on each track to learn more!</Text>
         {trackClicked == Tracks.EMERGING &&
         <Text className={styles.description}>
           Feeling like a newbie to hackathons and uncertain on how to get a technology project up and running?
