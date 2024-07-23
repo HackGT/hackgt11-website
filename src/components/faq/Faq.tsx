@@ -44,7 +44,7 @@ const Faq = () => {
           applications will get a higher chance of securing a spot! Early Bird ends <i><b>September 1st 11:59 pm</b></i> and 
           right after this period, regular applications will be taken until <i><b>September 8th 11:59pm</b></i>.
         </Text>
-        <Text fontSize="0.5em" fontWeight="bold" bgColor="rgba(181,59,39, 0.75)" padding="1vw" borderRadius="20px"><a href="https://registration.hexlabs.org/">Register NOW here!</a></Text>
+        <Text className={styles.note} fontWeight="bold" bgColor="rgba(181,59,39, 0.75)" padding="1vw" borderRadius="20px"><a href="https://registration.hexlabs.org/">Register NOW here!</a></Text>
       </VStack>
     </div>
   );
