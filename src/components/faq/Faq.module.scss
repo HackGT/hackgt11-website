@@ -82,21 +82,33 @@
 
 .registration {
   margin-top: 5vw;
-  font-size: x-large;
+  font-size: 3vw;
   width: 80%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  .reg_title {
-    font-family: "Horse Saguaro" !important;
+
+  .note {
+    font-family: "Montserrat" !important;
     font-weight: normal !important;
+    font-size: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .title {
+    font-size: 5vw !important;
+  }
+   
+  .note {
+    font-size: 0.75em !important;
   }
 }
 
 @media (max-width: 480px) {
   .faq_box {
     .title {
-      font-size: $headerMobile;
+      // font-size: $headerMobile;
     }
   }
   .qa_shape {

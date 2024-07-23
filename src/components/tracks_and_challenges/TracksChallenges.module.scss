@@ -44,13 +44,13 @@
   line-height: 1.75;
   letter-spacing: 1px;
   font-family: "Montserrat" !important;
-  font-size: 0.36em;
+  font-size: 0.4em;
   font-style: normal;
   font-weight: 500;
 
   border-radius: 25px;
   background: rgba(140, 155, 114, 0.18);
-  padding: 1vw;
+  padding: 2vw;
 }
 
 .middle_path {
@@ -93,9 +93,12 @@
   }
 
   .tracksStack {
-    width: 40%;
-    top: 45%;
-    left: 18%;
+    margin-top: 0%;
+    font-size: 3.5vw;
+  }
+
+  .description {
+    line-height: 2;
   }
 
   .star_blue {
@@ -108,10 +111,29 @@
   }
 
   .grass_t1 {
-    top: -15%;
+    top: -10%;
+    right: 20%;
   }
   
   .grass_t2 {
     top: 14%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .tracksStack {
+    // margin-top: 0%;
+    font-size: 4vw;
+  }
+
+  .emerging_tent, .general_tent {
+    width: 18%;
+    top: 16%;
+  }
+  
+  .description {
+    // font-size: 0.5em;
+    line-height: 1.75;
+    padding: 3vw;
   }
 }
