@@ -17,8 +17,6 @@ import {
 
 import NavbarMobile from "./NavbarMobile";
 
-import { useEffect } from "react";
-
 interface Anchor {
   name: string;
   id: string;
@@ -31,7 +29,7 @@ interface NavProps {
 
 const Navbar = (np: NavProps) => {
   return (
-    <div>
+    <div className={`${styles.transition2s} ${styles.hidden}`} id="navbar">
       <a
         href="https://mlh.io/seasons/2025/events"
         target="_blank"
@@ -47,7 +45,7 @@ const Navbar = (np: NavProps) => {
         <HStack draggable="false" className={styles.container} spacing={"1vw"}>
           {np.anchors.map((anchor) => (
             <NavbarDesktop
-              key={null}
+              key={anchor.id}
               name={anchor.name}
               anchorLink={anchor.id}
               img={anchor.img}
@@ -56,7 +54,14 @@ const Navbar = (np: NavProps) => {
         </HStack>
       </Center>
 
-      <NavbarMobile />
+      <Box
+        display={{
+          base: 'flex',
+          md: 'none',
+        }}
+      >
+        <NavbarMobile />
+      </Box>
     </div>
   );
 };

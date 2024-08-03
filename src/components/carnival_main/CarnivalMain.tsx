@@ -1,26 +1,33 @@
-import { Link, Image, Box, HStack, Button, Center, Heading } from "@chakra-ui/react";
+import { Link, Image, Box, HStack, Text, Center, Heading } from "@chakra-ui/react";
 import styles from "./CarnivalMain.module.scss";
 
 const CarnivalMain = ({ handleClick }) => {
   return (
-    <Box bg='#34130D' className={styles.main} d='flex'>
+    <Box bg='#34130D' className={`${styles.main}`} d='flex' id="carnivalMain">
       <Image src="/img/top.png" className={styles.top} id="top" />
 
       <Image src="/img/curtains.png" className={styles.curtain} />
       <Image src="/img/bg_curtains.png" className={styles.curtain} id='curtains' />
 
 
-      <Box color='white' className={styles.titleBox} id="titleBox">
+      <Box color='white' className={`${styles.titleBox}`} id="titleBox">
         <Box textAlign='center'>
           <Image
             src="/svg/home/light_title.svg"
             alt="HackGT 11"
-            w='1500px'
+            w='1200px'
           />
 
-          <Button onClick={handleClick} className={styles.button} bg='#FFD700' color='#34130D' size='lg' mt={4}>
-            Register
-          </Button>
+          <Link
+            draggable="false"
+            style={{ textDecoration: "none" }}
+            onClick={handleClick}
+          >
+            <Center className={styles.imageBackground} mx='auto' mt={8}
+            >
+              <Text>Enter the carnival</Text>
+            </Center>
+          </Link>
         </Box>
       </Box>
     </Box>

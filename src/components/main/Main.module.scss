@@ -4,6 +4,10 @@
   animation: scale 1000ms ease-in-out;
 }
 
+.hidden {
+  display: none;
+}
+
 @keyframes scale {
   to {
     transform: scale(1.2);
@@ -148,8 +152,8 @@
     left: 10%;
     bottom: 4%;
     width: 45%;
-    z-index: 3;
-    animation: zoom_out 4s linear;
+    z-index: 6;
+    animation: zoom_out 2s linear;
   }
 
 

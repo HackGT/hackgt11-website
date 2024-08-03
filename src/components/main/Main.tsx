@@ -9,7 +9,7 @@ const Main = () => {
     // mydiv.left = ((parseInt(document.body.clientWidth) / 2) - (parseInt(myDiv.Width) / 2)) +'px';
   })
   return (
-    <Box className={styles.main}>
+    <Box className={`${styles.main} ${styles.hidden}`} id='mainHeader'>
       <Image
         className={styles.sky}
         src="/svg/home/sky.svg"

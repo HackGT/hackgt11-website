@@ -13,21 +13,40 @@ import Footer from "../src/components/footer/Footer";
 import CarnivalMain from "../src/components/carnival_main/CarnivalMain";
 import { Box } from "@chakra-ui/react";
 import { default as carvnivalStyles } from "../src/components/carnival_main/CarnivalMain.module.scss";
+import { default as mainStyles } from "../src/components/main/Main.module.scss";
+import { default as navbarStyles } from "../src/components/navbar/Navbar.module.scss";
 import { useState } from "react";
+
 const Home: NextPage = () => {
   const handleClick = () => {
-    document.getElementById('curtains')?.classList.add(carvnivalStyles.zoom_start);
-    document.getElementById("top")?.classList.add(carvnivalStyles.bring_to_front, carvnivalStyles.zoom_start);
 
     document.getElementById("titleBox")?.classList.add(carvnivalStyles.fade_out);
 
     setTimeout(() => {
-      setComponent(<Main />);
-    }, 5000)
+      document.getElementById('curtains')?.classList.add(carvnivalStyles.zoom_start);
+      document.getElementById("top")?.classList.add(carvnivalStyles.bring_to_front, carvnivalStyles.zoom_start);
+
+    }, 300);
+
+
+    setTimeout(() => {
+      document.getElementById("mainHeader")?.classList.remove(mainStyles.hidden);
+      document.getElementById("carnivalMain")?.classList.add(carvnivalStyles.hidden);
+
+    }, 2000);
+
+    setTimeout(() => {
+      setShowingMain(true);
+    }, 3000)
+
+    setTimeout(() => {
+      document.getElementById("navbar")?.classList.remove(navbarStyles.hidden);
+    }, 4000);
   }
 
-  const [component, setComponent] = useState<JSX.Element | null>(<CarnivalMain handleClick={handleClick} />);
-
+  // const [component, setComponent] = useState<JSX.Element | null>(<CarnivalMain handleClick={handleClick} />);
+  const [showingMain, setShowingMain] = useState(false);
+  const [showingNavBar, setShowingNavBar] = useState(false);
 
   return (
     <div className="circus_bg">
@@ -40,14 +59,19 @@ const Home: NextPage = () => {
           href="/icon/logo/hackgt11-512x512.png"
         />
       </Head>
-      {/* <Navbar anchors={links.components} /> */}
 
-      {/* <Main /> */}
-      {/* <CarnivalMain handleClick={handleClick} /> */}
-      {component}
+      <Navbar anchors={links.components} />
+
 
       {
-        component === <Main /> &&
+        !showingMain &&
+        <CarnivalMain handleClick={handleClick} />
+      }
+
+      <Main />
+
+      {
+        showingMain &&
         (
           <>
             <section id="about">

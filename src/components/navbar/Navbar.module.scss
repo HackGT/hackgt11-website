@@ -1,3 +1,6 @@
+.transition2s {
+  transition: opacity 2s;
+}
 .container {
   position: fixed;
   top: 3vh;
@@ -21,6 +24,21 @@
   .imageBackground:hover {
     text-decoration: underline;
   }
+}
+
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fade_in {
+  animation: fadeIn 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.hidden {
+  display: none;
 }
 
 .navbarContainer {
