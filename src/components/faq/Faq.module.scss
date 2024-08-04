@@ -87,12 +87,21 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
 
-  .note {
-    font-family: "Montserrat" !important;
-    font-weight: normal !important;
-    font-size: 0.5em;
-  }
+.note {
+  font-family: "Montserrat" !important;
+  font-weight: normal !important;
+  font-size: 1.5vw !important;
+}
+
+.travel {
+  margin-top: 5vw;
+  font-size: 2.25vw;
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media only screen and (max-width: 1441px) {
@@ -101,7 +110,7 @@
   }
    
   .note {
-    font-size: 0.65em !important;
+    font-size: 2vw !important;
   }
 }
 
@@ -111,7 +120,7 @@
   }
 
   .note {
-    font-size: 0.9em !important;
+    font-size: 2.7vw !important;
   }
 }
 

@@ -44,7 +44,16 @@ const Faq = () => {
           applications will get a higher chance of securing a spot! Early Bird ends <i><b>September 1st 11:59 pm</b></i> and 
           right after this period, regular applications will be taken until <i><b>September 8th 11:59pm</b></i>.
         </Text>
-        <Text className={styles.note} fontWeight="bold" bgColor="rgba(181,59,39, 0.75)" padding="1vw" borderRadius="20px"><a href="https://registration.hexlabs.org/">Register NOW here!</a></Text>
+        <Text className={styles.note} fontWeight="bold" bgColor="rgba(181,59,39, 0.75)" padding={{ base: "1.5vw", lg: "1.2vw" }} borderRadius={{ base: "15px", lg: "20px" }}><a href="https://registration.hexlabs.org/">Register NOW here!</a></Text>
+      </VStack>
+      <VStack className={styles.travel} spacing="2vw">
+        <Heading className={styles.title}>TRAVEL REIMBURSEMENT</Heading>
+        <Text className={styles.note}>
+          All students seeking gas reimbursement must register before <i><b>August 27th</b></i>. 
+          We don't want anything to stop our hackers from being able to experience HackGT 11, including transportation! 
+          This year we will be offering travel aid through reimbursements. 
+          Check out <a href="https://hexlabs.notion.site/HackGT-11-Travel-Assistance-a381305832f249ed8d23c5ca4d272021"><u><b>this</b></u></a> page for more information.
+        </Text>
       </VStack>
     </div>
   );
