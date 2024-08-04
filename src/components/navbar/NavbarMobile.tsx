@@ -41,7 +41,7 @@ const NavbarMobile: React.FC = () => {
           </svg>
         </MenuButton>
 
-        <MenuList>
+        <MenuList backgroundColor="#E14759" textColor="white">
           <Link href="#home">
             <MenuItem>Home</MenuItem>
           </Link>
