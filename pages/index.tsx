@@ -26,18 +26,19 @@ const Home: NextPage = () => {
       document.getElementById('curtains')?.classList.add(carvnivalStyles.zoom_start);
       document.getElementById("top")?.classList.add(carvnivalStyles.bring_to_front, carvnivalStyles.zoom_start);
 
-    }, 300);
-
+    }, 700);
 
     setTimeout(() => {
       document.getElementById("mainHeader")?.classList.remove(mainStyles.hidden);
-      document.getElementById("carnivalMain")?.classList.add(carvnivalStyles.hidden);
+    }, 2400);
 
-    }, 2000);
+    setTimeout(() => {
+      document.getElementById("carnivalMain")?.classList.add(carvnivalStyles.fade_out);
+    }, 2700);
 
     setTimeout(() => {
       setShowingMain(true);
-    }, 3000)
+    }, 3500)
 
     setTimeout(() => {
       document.getElementById("navbar")?.classList.remove(navbarStyles.hidden);
@@ -46,7 +47,7 @@ const Home: NextPage = () => {
 
   // const [component, setComponent] = useState<JSX.Element | null>(<CarnivalMain handleClick={handleClick} />);
   const [showingMain, setShowingMain] = useState(false);
-  const [showingNavBar, setShowingNavBar] = useState(false);
+
 
   return (
     <div className="circus_bg">

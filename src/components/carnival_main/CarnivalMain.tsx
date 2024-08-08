@@ -3,11 +3,11 @@ import styles from "./CarnivalMain.module.scss";
 
 const CarnivalMain = ({ handleClick }) => {
   return (
-    <Box bg='#34130D' className={`${styles.main}`} d='flex' id="carnivalMain">
+    <Box bg='#34130D' className={`${styles.main}`} d='flex' id="carnivalMain" height='100vh'>
       <Image src="/img/top.png" className={styles.top} id="top" />
 
       <Image src="/img/curtains.png" className={styles.curtain} />
-      <Image src="/img/bg_curtains.png" className={styles.curtain} id='curtains' />
+      <Image src="/img/bg_curtains.png" className={styles.curtain} id='curtains' height='100vh' />
 
 
       <Box color='white' className={`${styles.titleBox}`} id="titleBox">
