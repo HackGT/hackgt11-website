@@ -7,7 +7,7 @@ import styles from "./Navbar.module.scss";
 const NavbarMobile: React.FC = () => {
   return (
     <div className={styles.menu}>
-      <Menu>
+      <Menu autoSelect={false}>
         <MenuButton>
           <svg
             width="36"
@@ -54,12 +54,12 @@ const NavbarMobile: React.FC = () => {
             <MenuItem>Tracks</MenuItem>
           </Link>
 
-          <Link href="#faq">
-            <MenuItem>FAQ</MenuItem>
-          </Link>
-
           <Link href="#schedule">
             <MenuItem>Schedule</MenuItem>
+          </Link>
+
+          <Link href="#faq">
+            <MenuItem>FAQ</MenuItem>
           </Link>
 
           <Link href="#sponsors">
