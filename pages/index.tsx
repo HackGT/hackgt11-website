@@ -23,29 +23,29 @@ const Home: NextPage = () => {
     document.getElementById("titleBox")?.classList.add(carvnivalStyles.fade_out);
 
     setTimeout(() => {
+      // start zoom into tent (curtains)
       document.getElementById('curtains')?.classList.add(carvnivalStyles.zoom_start);
       document.getElementById("top")?.classList.add(carvnivalStyles.bring_to_front, carvnivalStyles.zoom_start);
-
     }, 700);
 
     setTimeout(() => {
+      // this should fade in new tent
+      setShowingMain(true);
       document.getElementById("mainHeader")?.classList.remove(mainStyles.hidden);
-    }, 2400);
-
-    setTimeout(() => {
-      document.getElementById("carnivalMain")?.classList.add(carvnivalStyles.fade_out);
+      document.getElementById("mainHeader")?.classList.add(mainStyles.fade_in);
     }, 2700);
 
+
     setTimeout(() => {
-      setShowingMain(true);
+      // show rest of the page
+
     }, 3500)
 
-    setTimeout(() => {
-      document.getElementById("navbar")?.classList.remove(navbarStyles.hidden);
-    }, 4000);
+    // setTimeout(() => {
+    //   document.getElementById("navbar")?.classList.remove(navbarStyles.hidden);
+    // }, 4000);
   }
 
-  // const [component, setComponent] = useState<JSX.Element | null>(<CarnivalMain handleClick={handleClick} />);
   const [showingMain, setShowingMain] = useState(false);
 
 
@@ -63,13 +63,13 @@ const Home: NextPage = () => {
 
       <Navbar anchors={links.components} />
 
-
-      {
+      <Main />
+      {/* {
         !showingMain &&
         <CarnivalMain handleClick={handleClick} />
-      }
+      } */}
 
-      <Main />
+
 
       {
         showingMain &&
