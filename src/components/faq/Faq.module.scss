@@ -1,9 +1,17 @@
 @import "../styles/variables.scss";
 
+@keyframes faqBorder {
+  0% {
+    border-radius: 30px;
+  }
+  100% {
+    border-radius: 30px 30px 0px 0px;
+  }
+}
+
 .container {
   color: black;
   padding-bottom: $p3/2;
-  // padding-top: $p3/1.2;
   position: relative;
 
   margin-left: 3%;
@@ -14,22 +22,29 @@
   font-family: "Montserrat";
 
   .clickable {
-    background-color: rgba(178, 226, 216, 0.9);
-    border-radius: 30px; /* Rounded corners all around */
-    padding: 10px; /* Add padding for better text spacing */
+    background-color: rgba(106, 140, 101, 0.34);
+    // border-radius: 30px 30px 0px 0px;
+    padding: $p1/2 $p1 $p1/2 $p1;
   }
 
-  // .clickable.open {
-  //   border-radius: 20px 20px 0 0; /* Rounded corners only on the top when open */
-  // }
+  .open {
+    border-radius: 30px 30px 0px 0px;
+    animation: faqBorder 0.1s linear 0s normal forwards;
+  }
+
+  .close {
+    border-radius: 30px;
+    // animation: faqBorder 0.1s linear 0s reverse forwards;
+  }
 
   .answer {
-    background-color: rgba(0, 0, 0, 0.141); /* Adjust the opacity as needed */
+    background-color: rgba(175, 182, 174, 0.34); /* Adjust the opacity as needed */
     color: white;
     font-family: "Montserrat";
     border-radius: 0 0 20px 20px; /* Rounded corners only on the bottom */
-    padding: 10px; /* Add padding for better text spacing */
-    margin: auto;
+    padding: $p1/2 $p1 $p1/2 $p1;
+    margin: 0%;
+    width: auto;
   }
 }
 
@@ -46,30 +61,33 @@
   height: 100%;
 }
 
-.link {
-  color: #b2e2d8;
-  font-weight: bold;
-}
+// .link {
+//   color: #b2e2d8;
+//   font-weight: bold;
+// }
 
 .qa_shape {
   position: relative;
   z-index: 3;
   overflow: hidden; /* Ensure child elements don't overflow rounded corners */
+  width: $faq;
   
   .clickable {
     cursor: pointer;
     color: white;
+    display: flex;
+    justify-content: space-between;
   }
 
   .question {
     font-family: "Montserrat";
-    font-weight: bold;
+    // font-weight: bold;
   }
 
   .both {
-    width: $faq;
+    // width: $faq;
     text-align: left;
-    padding: $p1/3 $p1/2 $p1/3 $p1/2;
+    // padding: $p1/2 $p1 $p1/2 $p1;
   }
 }
 
@@ -96,10 +114,10 @@
 }
 
 .travel {
-  margin-top: 7vw;
   font-size: 2.25vw;
   width: 80%;
   text-align: center;
+  margin-top: 7vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -121,6 +139,10 @@
 
   .note {
     font-size: 2.7vw !important;
+  }
+
+  .travel {
+    margin-bottom: -15vw;
   }
 }
 
