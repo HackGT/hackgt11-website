@@ -49,7 +49,7 @@ const Faq = () => {
       <VStack className={styles.travel} spacing="2vw">
         <Heading className={styles.title}>TRAVEL REIMBURSEMENT</Heading>
         <Text className={styles.note}>
-          All students seeking gas reimbursement must register before <i><b>August 12th</b></i>. 
+          All students seeking gas reimbursement must register before <i><b>August 16th</b></i>. 
           We don't want anything to stop our hackers from being able to experience HackGT 11, including transportation! 
           This year we will be offering travel aid through reimbursements. 
           Check out <a href="https://hexlabs.notion.site/HackGT-11-Travel-Assistance-a381305832f249ed8d23c5ca4d272021"><u><b>this</b></u></a> page for more information.
