@@ -29,6 +29,7 @@ const Home: NextPage = () => {
     }, 700);
 
     setTimeout(() => {
+      // added this comment so i can commit
       document.getElementById("mainHeader")?.classList.remove(mainStyles.hidden);
     }, 2400);
 
