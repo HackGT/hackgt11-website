@@ -1,29 +1,28 @@
 {
   "tracks": [
     {
-      "trackName": "DIGITAL ART 4510",
-      "trackDescription": "In DIGITAL ART 4510, hackers embrace the power of digital arts and entertainment to create immersive experiences that evoke emotions and transport audiences to new realms. Their project becomes a cherished memory, weaving together creativity, storytelling, and the joy of shared moments.",
-      "color": "#A3A7E4"
+      "trackName": "Carnival for a Cause",
+      "trackDescription": "Step right up and make a difference! Create solutions for social issues, environmental sustainability, healthcare, and mental health to build a better world for all.",
+      "picSrc": "main_tent.png",
+      "color": "#FFDB59"
     },
     {
-      "trackName": "EDU 3510",
-      "trackDescription": "By taking EDU 3510, you aim to enhance education by paving the way for inclusive and transformative education. Some avenues could be through visualization, self-improvement tools, accessibility innovations, and more. Their project encapsulates the memories of growth, empowerment, and the joy of learning, encouraging others to unlock their full potential.",
-      "color": "#BAE2BE"
+      "trackName": "Magical Midway",
+      "trackDescription": "Enter a realm of enchantment and wonder! Develop projects that transport users to whimsical, immersive worlds through AR, VR, computer vision, or any other medium!.",
+      "picSrc": "festive_mask.png",
+      "color": "#72CFE4"
     },
     {
-      "trackName": "SUSTAIN 2110",
-      "trackDescription": "Take SUSTAIN 2110 to explore and use your forward-thinking approaches towards sustainability and environmental conservation. Your project will embody the memories we cherish, reminding us to be responsible stewards of the Earth and leave a positive legacy for future generations.",
-      "color": "#F0F1B3"
+      "trackName": "Analytics Arcade",
+      "trackDescription": "Dive into data-driven innovation! Harness data science, fintech, blockchain, and cybersecurity to uncover insights and create the next big thing in the digital carnival of industries.",
+      "picSrc": "tickets.png",
+      "color": "#2A6F97"
     },
     {
-      "trackName": "INNOVATE 3251",
-      "trackDescription": "In INNOVATE 3251, we invite teams to explore cutting-edge technologies, such as artificial intelligence, machine learning, virtual reality, and more. Their project represents the transformative power of technology, creating a lasting impact and shaping unforgettable memories.",
-      "color": "#C5E5E3"
-    },
-    {
-      "trackName": "HEALTH 1001",
-      "trackDescription": "For the HEALTH 1001 track, teams can leverage technology to create innovative solutions that improve healthcare accessibility, promote mental well-being, and foster personal growth. Just like cherished memories, their project captures the essence of nurturing a healthier future.",
-      "color": "#D9D9D9"
+      "trackName": "AI Funhouse",
+      "trackDescription": "Step into the AI Funhouse! Explore the playful world of AI and ML, creating chatbots, intelligent systems, and AI-driven games that push boundaries and dazzle with innovation.",
+      "picSrc": "bunny.png",
+      "color": "#FF5F72"
     }
   ]
 }
