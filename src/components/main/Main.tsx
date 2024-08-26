@@ -2,7 +2,7 @@ import { Link, Image, Box, VStack, HStack, Button, Center, Heading } from "@chak
 import styles from "./Main.module.scss";
 import { useEffect } from "react";
 
-const Main = ({ animate }) => {
+const Main = ({ animate }: { animate: boolean }) => {
   useEffect(() => {
     // var mydiv = document.getElementById('mydivid');
     // mydiv.top = ((parseInt(document.body.clientHeight) / 2) - (parseInt(myDiv.Height) / 2)) +'px';

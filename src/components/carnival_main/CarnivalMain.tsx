@@ -1,7 +1,7 @@
 import { Link, Image, Box, HStack, Text, Center, Heading } from "@chakra-ui/react";
 import styles from "./CarnivalMain.module.scss";
 
-const CarnivalMain = ({ handleClick }) => {
+const CarnivalMain = ({ handleClick }: { handleClick: () => void }) => {
   return (
     <Box bg='#34130D' className={`${styles.main}`} d='flex' id="carnivalMain" height='100vh'>
       <Image src="/img/top.png" className={styles.top} id="top" />
