@@ -153,9 +153,11 @@
     bottom: 4%;
     width: 45%;
     z-index: 6;
-    animation: zoom_out 3s linear;
   }
 
+  .main_tent_animation {
+    animation: zoom_out 3s linear;
+  }
 
 
   .popcorn_stand {

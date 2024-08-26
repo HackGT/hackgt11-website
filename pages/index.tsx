@@ -15,11 +15,13 @@ import { Box } from "@chakra-ui/react";
 import { default as carvnivalStyles } from "../src/components/carnival_main/CarnivalMain.module.scss";
 import { default as mainStyles } from "../src/components/main/Main.module.scss";
 import { default as navbarStyles } from "../src/components/navbar/Navbar.module.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Home: NextPage = () => {
+  const [showingMain, setShowingMain] = useState(false);
+  const [animate, setAnimate] = useState(true);
   const handleClick = () => {
-
+    localStorage.setItem("animationPlayed", "true");
     document.getElementById("titleBox")?.classList.add(carvnivalStyles.fade_out);
 
     setTimeout(() => {
@@ -29,26 +31,35 @@ const Home: NextPage = () => {
     }, 700);
 
     setTimeout(() => {
-      // added this comment so i can commit
       document.getElementById("mainHeader")?.classList.remove(mainStyles.hidden);
-    }, 2400);
+    }, 1500);
 
     setTimeout(() => {
+      // fade out the opening tent
       document.getElementById("carnivalMain")?.classList.add(carvnivalStyles.fade_out);
     }, 2700);
 
     setTimeout(() => {
       setShowingMain(true);
-    }, 3500)
+    }, 2500)
 
     setTimeout(() => {
       document.getElementById("navbar")?.classList.remove(navbarStyles.hidden);
     }, 4000);
   }
-
-  // const [component, setComponent] = useState<JSX.Element | null>(<CarnivalMain handleClick={handleClick} />);
-  const [showingMain, setShowingMain] = useState(false);
-
+  
+  useEffect(() => {
+    const key="animationPlayed";
+    const animationPlayed = localStorage.getItem(key);
+    if (animationPlayed) {
+      console.log("animation played");
+      document.getElementById("mainHeader")?.classList.remove(mainStyles.hidden);
+      document.getElementById("navbar")?.classList.remove(navbarStyles.hidden);
+      setShowingMain(true);
+      setAnimate(false);
+    }
+  }, [])
+  
 
   return (
     <div className="circus_bg">
@@ -70,7 +81,9 @@ const Home: NextPage = () => {
         <CarnivalMain handleClick={handleClick} />
       }
 
-      <Main />
+      <Main
+        animate={animate}
+      />
 
       {
         showingMain &&

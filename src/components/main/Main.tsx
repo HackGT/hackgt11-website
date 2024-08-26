@@ -2,7 +2,7 @@ import { Link, Image, Box, VStack, HStack, Button, Center, Heading } from "@chak
 import styles from "./Main.module.scss";
 import { useEffect } from "react";
 
-const Main = () => {
+const Main = ({ animate }) => {
   useEffect(() => {
     // var mydiv = document.getElementById('mydivid');
     // mydiv.top = ((parseInt(document.body.clientHeight) / 2) - (parseInt(myDiv.Height) / 2)) +'px';
@@ -73,7 +73,7 @@ const Main = () => {
         alt="ticket booth"
       />
       <Image
-        className={styles.main_tent}
+        className={`${styles.main_tent} ${animate ? styles.main_tent_animation : ''}`}
         src="/svg/home/main_tent.svg"
         alt="main tent"
         id="main_tent"

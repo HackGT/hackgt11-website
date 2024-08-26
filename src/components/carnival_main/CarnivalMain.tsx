@@ -13,7 +13,7 @@ const CarnivalMain = ({ handleClick }) => {
       <Box color='white' className={`${styles.titleBox}`} id="titleBox">
         <Box textAlign='center'>
           <Image
-            src="/svg/home/light_title.svg"
+            src="/img/hackg11main.png"
             alt="HackGT 11"
             w='1200px'
           />
