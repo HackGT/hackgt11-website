@@ -43,9 +43,9 @@ const Navbar = (np: NavProps) => {
       </a>
       <Center>
         <HStack draggable="false" className={styles.container} spacing={"1vw"}>
-          {np.anchors.map((anchor) => (
+          {np.anchors.map((anchor, index) => (
             <NavbarDesktop
-              key={anchor.id}
+              key={index.toString()}
               name={anchor.name}
               anchorLink={anchor.id}
               img={anchor.img}

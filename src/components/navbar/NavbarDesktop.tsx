@@ -3,7 +3,7 @@ import styles from "./Navbar.module.scss";
 
 interface NavbarDesktopProps {
   name: string;
-  key: null;
+  key: string;
   anchorLink: string;
   img: string;
 }
