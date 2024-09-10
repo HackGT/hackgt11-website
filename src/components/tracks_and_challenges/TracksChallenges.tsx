@@ -84,6 +84,7 @@ const TracksChallenges = () => {
           />
         </HStack>
         <Text fontSize="0.4em">Click on each track to learn more!</Text>
+        
         {trackClicked == Tracks.EMERGING &&
         <Text className={styles.description}>
           Feeling like a newbie to hackathons and uncertain on how to get a technology project up and running?
@@ -100,6 +101,10 @@ const TracksChallenges = () => {
           We'll bring engaging industry professionals, provide new technologies, and award impactful prizes to 
           help you with your project.
         </Text>}
+        <Image 
+          src='/svg/tracks/Tracks.svg' 
+          width='100%'
+        />
       </VStack>
       <Image
         className={styles.middle_path}
