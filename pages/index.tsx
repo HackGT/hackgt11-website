@@ -51,7 +51,11 @@ const Home: NextPage = () => {
   useEffect(() => {
     const key="animationPlayed";
     const animationPlayed = localStorage.getItem(key);
-    if (animationPlayed) {
+
+    // check if user on mobile
+    const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches || window.screen.width <= 768;
+
+    if (animationPlayed || isMobile) {
       console.log("animation played");
       document.getElementById("mainHeader")?.classList.remove(mainStyles.hidden);
       document.getElementById("navbar")?.classList.remove(navbarStyles.hidden);
