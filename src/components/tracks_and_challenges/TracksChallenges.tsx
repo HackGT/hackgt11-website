@@ -68,7 +68,7 @@ const TracksChallenges = () => {
       />
       <VStack
         className={styles.tracksStack}
-        spacing="1vw"
+        spacing="2vw"
       >
         <HStack spacing="2vw" alignItems="center">
           <Image
@@ -106,6 +106,10 @@ const TracksChallenges = () => {
           width='100%'
         />
       </VStack>
+      
+
+      <Box h={12} />
+
       <Image
         className={styles.middle_path}
         src="/svg/tracks/middle_path.svg"

@@ -10,6 +10,7 @@ import links from "../src/components/navbar/nav.json";
 import Navbar from "../src/components/navbar/Navbar";
 import Schedule from "../src/components/schedule/Schedule";
 import Footer from "../src/components/footer/Footer";
+import { Box } from "@chakra-ui/react";
 
 const Home: NextPage = () => {
   return (
@@ -33,6 +34,9 @@ const Home: NextPage = () => {
       <section id="tracks_and_challenges">
         <TracksChallenges />
       </section>
+
+      {/* <Box h={64} /> */}
+
       <section id="schedule">
         <Schedule />
       </section>
