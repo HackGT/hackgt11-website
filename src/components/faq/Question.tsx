@@ -12,7 +12,8 @@ const Question = (qp: QuestionProps) => {
 
   return (
     <HStack
-      className={styles.clickable}
+      className={`${styles.clickable} ${qp.open ? styles.open : styles.close}`}
+      // borderRadius={qp.open ? "30px 30px 0px 0px" : "30px"}
       onClick={() => {
         setArrowDirection(!arrowDirection);
       }}>

@@ -10,6 +10,7 @@ import links from "../src/components/navbar/nav.json";
 import Navbar from "../src/components/navbar/Navbar";
 import Schedule from "../src/components/schedule/Schedule";
 import Footer from "../src/components/footer/Footer";
+
 import CarnivalMain from "../src/components/carnival_main/CarnivalMain";
 import { Box } from "@chakra-ui/react";
 import { default as carvnivalStyles } from "../src/components/carnival_main/CarnivalMain.module.scss";
@@ -78,7 +79,6 @@ const Home: NextPage = () => {
       </Head>
 
       <Navbar anchors={links.components} />
-
 
       {
         !showingMain &&
