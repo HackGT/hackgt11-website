@@ -70,7 +70,7 @@ const About = () => {
           gridArea="1 / 1"
           width="95%"
         />
-        <VStack 
+        <VStack
           gridArea="1 / 1"
           className={styles.aboutStack}
           spacing={{ base: "1vw", lg: "2vw" }}>
@@ -88,11 +88,11 @@ const About = () => {
             />
           </HStack>
           <Text className={styles.description}>
-            Shape the future at the 🎪 Circus of Inventions from <b>September 27th</b> to <b>September 29th!</b> 🎡 
-            The 11th edition of our flagship hackathon brings you a transformed carnival of creativity for all innovators, builders, and visionaries. 
+            Shape the future at the 🎪 Circus of Inventions from <b>September 27th</b> to <b>September 29th!</b> 🎡
+            The 11th edition of our flagship hackathon brings you a transformed carnival of creativity for all innovators, builders, and visionaries.
             <br /><br />
-            Each year, HackGT welcomes over 1500+ hackers 🤹 from around the world to tackle novel challenges, win exciting prizes, and make lasting connections 🎠! 
-            HackGT's stage will be open to everyone, regardless of background, experience, or skill level, to showcase their innovative ideas. 🎢 
+            Each year, HackGT welcomes over 1500+ hackers 🤹 from around the world to tackle novel challenges, win exciting prizes, and make lasting connections 🎠!
+            HackGT's stage will be open to everyone, regardless of background, experience, or skill level, to showcase their innovative ideas. 🎢
             Hackers can expect a thrilling weekend filled with networking opportunities, top-tier prizes, engaging mini-events, and lots of swag! 🏆
           </Text>
         </VStack>

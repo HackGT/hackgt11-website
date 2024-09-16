@@ -1,0 +1,172 @@
+@import "../styles/variables.scss";
+
+.register_now:hover {
+  animation: scale 1000ms ease-in-out;
+}
+
+@keyframes scale {
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes moveClouds {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes growFirework {
+  0% {
+      transform: scale(1);
+      opacity: 0%;
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      transform: scale(2);
+      opacity: 0;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+.air_balloon {
+  animation: float 3s ease-in-out infinite;
+}
+
+.clouds-container {
+  position: absolute;
+  top: 16%;
+  width: 200%;
+  display: flex;
+  animation: moveClouds 60s linear infinite; /* Adjusted duration from 30s to 60s */
+}
+
+.clouds {
+  width: 50%;
+}
+
+.clouds.reversed {
+  transform: scaleX(-1);
+}
+
+
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(4);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1 !important;
+  }
+  100% {
+    opacity: 0 !important;
+  }
+}
+
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+
+.fade_out{
+  animation: fadeOut 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.fade_out_fast {
+  animation: fadeOut 0.1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+
+
+.curtain {
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+}
+
+.bring_to_front {
+  z-index: 999 !important;
+}
+
+.top {
+  position: absolute;
+  width: 100%;
+  z-index: 4;
+}
+
+.zoom_start {
+  animation: zoom 2s linear;
+  animation-fill-mode: forwards;
+}
+
+.titleBox {
+  z-index: 5;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+  transition: opacity 3s ease-in-out;
+  opacity: 1;
+}
+
+.imageBackground {
+  font-size: 20px;
+  font-family: "Horse Saguaro";
+  color: #FFF4BF;
+  z-index: 1000;
+
+  background-image: url('/img/navbar/ticket.png');
+  background-size: cover;
+  background-position: center center;
+  width: 200px; /* Adjust as necessary */
+  height: 80px; /* Adjust as necessary */
+}
+
+@media only screen {
+  .main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden; /* Ensure no horizontal scrolling */
+  }
+
+  .title {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+    top: 15%;
+    left: 25%;
+
+  }
+}

@@ -1,9 +1,15 @@
 import { Link, Image, Box, VStack, HStack, Button, Center, Heading } from "@chakra-ui/react";
 import styles from "./Main.module.scss";
+import { useEffect } from "react";
 
-const Main = () => {
+const Main = ({ animate }: { animate: boolean }) => {
+  useEffect(() => {
+    // var mydiv = document.getElementById('mydivid');
+    // mydiv.top = ((parseInt(document.body.clientHeight) / 2) - (parseInt(myDiv.Height) / 2)) +'px';
+    // mydiv.left = ((parseInt(document.body.clientWidth) / 2) - (parseInt(myDiv.Width) / 2)) +'px';
+  })
   return (
-    <Box className={styles.main}>
+    <Box className={`${styles.main} ${styles.hidden}`} id='mainHeader'>
       <Image
         className={styles.sky}
         src="/svg/home/sky.svg"
@@ -67,9 +73,10 @@ const Main = () => {
         alt="ticket booth"
       />
       <Image
-        className={styles.main_tent}
+        className={`${styles.main_tent} ${animate ? styles.main_tent_animation : ''}`}
         src="/svg/home/main_tent.svg"
         alt="main tent"
+        id="main_tent"
       />
       <Image
         className={styles.popcorn_stand}
