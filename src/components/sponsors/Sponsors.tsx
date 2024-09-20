@@ -53,6 +53,11 @@ const Sponsors = () => {
         alt="sponsors lake"
       />
       <Image
+        className={styles.sponsors_no_nsa}
+        src="/svg/sponsors/sponsors_no_nsa.svg"
+        alt="sponsors no nsa"
+      />
+      <Image
         className={styles.seal}
         src="/svg/sponsors/seal.svg"
         alt="seal"
