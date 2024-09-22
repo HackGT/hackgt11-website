@@ -43,7 +43,7 @@ const Footer = () => {
             <Image src="/icon/discord.svg" alt="discord" />
           </Link>
         </HStack>
-        <Text>made with &#60;3 by hexlabs</Text>
+        <Text>made with &#60;3 by hexlabs at Georgia Tech</Text>
         <Link
           href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
           target="_blank">
